@@ -1,0 +1,20 @@
+/*
+Theme Name: NodeJSConf 2014
+Description: NodeJSConf 2014 theme
+Author: NodeJSConf Team
+Version: 1.0
+*/
+
+/* -- reset -- */
+@import "compass/reset"; 
+@import "utility";
+
+/* -- colors -- */
+$mscuro: rgb(57,48,43);
+
+
+/* --- mostrobox! --- */
+.mostro-box{
+	height: 450px;
+	background-color: $mscuro;
+}

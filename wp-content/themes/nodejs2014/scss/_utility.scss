@@ -1,0 +1,23 @@
+/* -- componenti -- */
+@mixin cf{
+	*zoom: 1;
+	&:before,
+	&:after{
+    content: " "; /* 1 */
+    display: table; /* 2 */		
+	}
+	&:after{
+		clear: both;		
+	}	
+}
+
+@mixin db{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+
+/* -- comuni -- */
+.cf{ @include cf; 	}
+.db{ @include db; 	}
+.clear{ clear: both; }
