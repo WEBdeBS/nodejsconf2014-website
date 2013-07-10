@@ -27,10 +27,10 @@ class Monster{
     }else{
       vx = abs(vx) > abs(svx) ? vx + (vx > svx ? -0.1 : +0.1) : vx;
       vy = abs(vy) > abs(svy) ? vy + (vy > svy ? -0.1 : +0.1) : vy;
-      vx = x > width  || x < 0 ? -vx : vx;
-      vy = y > height || y < 0 ? -vy : vy;
-      x  = x > width ? width - 1 : x < 0 ? 1 : x;
-      y  = y > height ? height - 1 : y < 0 ? 1 : y;
+      vx = x > width - icon.width || x < 0 ? -vx : vx;
+      vy = y > height - icon.height || y < 0 ? -vy : vy;
+      x  = x > width - icon.width ? width - icon.width - 1 : x < 0 ? 1 : x;
+      y  = y > height - icon.height ? height - icon.height - 1 : y < 0 ? 1 : y;
     }
     x = x + vx;
     y = y + vy;
