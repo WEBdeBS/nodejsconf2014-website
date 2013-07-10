@@ -7,6 +7,7 @@ class Monster{
   Pimage icon;
   int x, y;
   float vx, vy, svx, svy;
+  boolean outside;
 
   Monster(Pimage image, int startx, int starty){
     icon = image;
@@ -16,6 +17,7 @@ class Monster{
     vy = random(0.5, 1) * (random(1) > 0.5 ? -1 : 1);
     svx = vx;
     svy = vy;
+    outside = false;
   }
 
   void draw(){
@@ -27,13 +29,24 @@ class Monster{
     }else{
       vx = abs(vx) > abs(svx) ? vx + (vx > svx ? -0.1 : +0.1) : vx;
       vy = abs(vy) > abs(svy) ? vy + (vy > svy ? -0.1 : +0.1) : vy;
-      vx = x > width - icon.width || x < 0 ? -vx : vx;
-      vy = y > height - icon.height || y < 0 ? -vy : vy;
-      x  = x > width - icon.width ? width - icon.width - 1 : x < 0 ? 1 : x;
-      y  = y > height - icon.height ? height - icon.height - 1 : y < 0 ? 1 : y;
+      
+      if (!outside){
+        vx = x > width - icon.width || x < 0 ? -vx : vx;
+        vy = y > height - icon.height || y < 0 ? -vy : vy;
+        x  = x > width - icon.width ? width - icon.width - 1 : x < 0 ? 1 : x;
+        y  = y > height - icon.height ? height - icon.height - 1 : y < 0 ? 1 : y;
+      }else{
+        vx = x < 0 ? abs(vx) : x > width - icon.width ? -abs(vx) : vx;
+        vy = y < 0 ? abs(vy) : y > height - icon.height ? -abs(vy) : vy;
+      }
+
     }
     x = x + vx;
     y = y + vy;
+
+    outside = mouse && (x < 0 || x > width - icon.width || y < 0 || y > height - icon.height) ? true : outside;
+    outside = !mouse && x >= 0 && x <= width - icon.width && y >= 0 && y <= height - icon.height ? false : outside;
+
     image(icon, x, y);
   }
 }
