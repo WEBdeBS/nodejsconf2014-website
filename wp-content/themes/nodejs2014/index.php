@@ -12,6 +12,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
 
 		<!-- stylesheet -->
+		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" 
 					type="text/css" 
 					href="<?php echo get_stylesheet_directory_uri() ?>/style.css"
@@ -25,6 +26,13 @@
 	<body>
 
 		<div class="mostro-box">
+
+			<!-- titolo -->
+			<h1 class="main-title">
+				<?php echo preg_replace("/_([^_]+)_/","<em>\$1</em>",get_bloginfo('description')); ?>
+			</h1>
+
+			<!-- mostri -->
 			<canvas data-processing-sources="<?php echo get_stylesheet_directory_uri() ?>/pde/monsters.pde"></canvas>
 
 		</div>

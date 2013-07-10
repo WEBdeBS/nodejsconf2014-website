@@ -25,8 +25,8 @@ class Monster{
       vx = vx > 7 ? 7 : vx < -7 ? -7 : vx;
       vy = vy > 7 ? 7 : vy < -7 ? -7 : vy;
     }else{
-      vx = abs(vx) > abs(svx) ? vx + (vx > 0 ? -0.1 : +0.1) : vx;
-      vy = abs(vy) > abs(svy) ? vy + (vy > 0 ? -0.1 : +0.1) : vy;
+      vx = abs(vx) > abs(svx) ? vx + (vx > svx ? -0.1 : +0.1) : vx;
+      vy = abs(vy) > abs(svy) ? vy + (vy > svy ? -0.1 : +0.1) : vy;
       vx = x > width  || x < 0 ? -vx : vx;
       vy = y > height || y < 0 ? -vy : vy;
       x  = x > width ? width - 1 : x < 0 ? 1 : x;
@@ -40,7 +40,7 @@ class Monster{
 
 // Global variables
 boolean mouse = false;
-int monsters_number = 30;
+int monsters_number = 15;
 int monster_icons_nr = 6;
 int max_width = window.innerWidth;
 int max_height = $('.mostro-box').height();

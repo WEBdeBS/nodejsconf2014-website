@@ -101,9 +101,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* -- colors -- */
-/* --- mostrobox! --- */
 /* line 17, scss/style.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+/* --- mostrobox! --- */
+/* line 23, scss/style.scss */
 .mostro-box {
   height: 450px;
   background-color: #39302b;
+}
+
+/* line 28, scss/style.scss */
+.main-title {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 60px;
+  padding: 40px 0;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  color: white;
+  text-shadow: -2px -2px 0 #39302b, 2px -2px 0 #39302b, -2px 2px 0 #39302b, 2px 2px 0 #39302b;
+}
+/* line 39, scss/style.scss */
+.main-title em {
+  color: #c4c72e;
 }

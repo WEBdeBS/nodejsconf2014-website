@@ -11,10 +11,35 @@ Version: 1.0
 
 /* -- colors -- */
 $mscuro: rgb(57,48,43);
+$bianco: rgb(255,255,255);
+$vchiaro: rgb(196,199,46);
 
+body{
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
 
 /* --- mostrobox! --- */
 .mostro-box{
 	height: 450px;
 	background-color: $mscuro;
+}
+
+.main-title{
+	position: absolute;
+	top: 100px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 60px;
+	padding: 40px 0;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: bold;
+	color: $bianco;
+	em{ color: $vchiaro; }
+  text-shadow:
+   -2px -2px 0 $mscuro,  
+    2px -2px 0 $mscuro,
+    -2px 2px 0 $mscuro,
+     2px 2px 0 $mscuro;
 }
