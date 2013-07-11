@@ -112,11 +112,13 @@ body {
 .mostro-box {
   height: 450px;
   background-color: #39302b;
+  position: relative;
 }
 
 /* line 28, scss/style.scss */
 .main-title {
   position: absolute;
+  pointer-events: none;
   top: 100px;
   left: 0;
   right: 0;
