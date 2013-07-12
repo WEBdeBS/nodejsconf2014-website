@@ -1,0 +1,38 @@
+.LR-box{
+	width: 500px !important;
+
+	position: absolute;
+	top: 230px;
+	left: 50%;
+	margin-left: -250px;
+}
+
+.LR-site-share .LR-site-share-container, .LR-site-share-email{
+	background: transparent !important;
+	padding: 0 !important;
+	border: 0 !important;
+}
+
+.LR-site-share-email{
+	position: relative;
+	top: -28px;
+}
+
+.LR-site-share-email input[type="text"], .LR-site-share-email input[type="email"], .LR-site-share-email textarea, input.LR-share-link{
+	width: 419px !important;
+}
+
+input.LR-share-email-emails[type="email"] {
+	width: 247px !important;
+	position: relative;
+	left: 24px;
+}
+
+.LR-share-email-import{
+	top: 0!important;
+}
+
+.LR-site-share-email textarea{
+	max-width: none !important;
+}
+

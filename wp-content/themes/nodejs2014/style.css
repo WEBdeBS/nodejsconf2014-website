@@ -100,21 +100,65 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   clear: both;
 }
 
+/* line 1, scss/_launchrock.scss */
+.LR-box {
+  width: 500px !important;
+  position: absolute;
+  top: 230px;
+  left: 50%;
+  margin-left: -250px;
+}
+
+/* line 10, scss/_launchrock.scss */
+.LR-site-share .LR-site-share-container, .LR-site-share-email {
+  background: transparent !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+/* line 16, scss/_launchrock.scss */
+.LR-site-share-email {
+  position: relative;
+  top: -28px;
+}
+
+/* line 21, scss/_launchrock.scss */
+.LR-site-share-email input[type="text"], .LR-site-share-email input[type="email"], .LR-site-share-email textarea, input.LR-share-link {
+  width: 419px !important;
+}
+
+/* line 25, scss/_launchrock.scss */
+input.LR-share-email-emails[type="email"] {
+  width: 247px !important;
+  position: relative;
+  left: 24px;
+}
+
+/* line 31, scss/_launchrock.scss */
+.LR-share-email-import {
+  top: 0 !important;
+}
+
+/* line 35, scss/_launchrock.scss */
+.LR-site-share-email textarea {
+  max-width: none !important;
+}
+
 /* -- colors -- */
-/* line 17, scss/style.scss */
+/* line 18, scss/style.scss */
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
 }
 
 /* --- mostrobox! --- */
-/* line 23, scss/style.scss */
+/* line 24, scss/style.scss */
 .mostro-box {
   height: 450px;
   background-color: #39302b;
 }
 
-/* line 28, scss/style.scss */
+/* line 29, scss/style.scss */
 .main-title {
   position: absolute;
   top: 100px;
@@ -128,7 +172,7 @@ body {
   color: white;
   text-shadow: -2px -2px 0 #39302b, 2px -2px 0 #39302b, -2px 2px 0 #39302b, 2px 2px 0 #39302b;
 }
-/* line 39, scss/style.scss */
+/* line 40, scss/style.scss */
 .main-title em {
   color: #c4c72e;
 }

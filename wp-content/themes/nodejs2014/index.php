@@ -32,6 +32,11 @@
 				<?php echo preg_replace("/_([^_]+)_/","<em>\$1</em>",get_bloginfo('description')); ?>
 			</h1>
 
+			<!-- Begin LaunchRock Widget -->
+			<div id="lr-widget" rel="MTBE93HI"></div>
+			<script type="text/javascript" src="//ignition.launchrock.com/ignition-current.min.js"></script>
+			<!-- End LaunchRock Widget -->
+
 			<!-- mostri -->
 			<canvas data-processing-sources="<?php echo get_stylesheet_directory_uri() ?>/pde/monsters.pde"></canvas>
 
@@ -40,7 +45,7 @@
 
 		<!-- javascript -->
 		<script data-main="<?php echo get_stylesheet_directory_uri() ?>/js/application.js" 
-						src="<?php echo get_stylesheet_directory_uri() ?>/vendor/require-jquery.js">
+				src="<?php echo get_stylesheet_directory_uri() ?>/vendor/require.js">
 		</script>
 
 		<!-- footer -->
