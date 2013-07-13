@@ -5,29 +5,46 @@ Author: NodeJSConf Team
 Version: 1.0
 */
 
-/* -- reset -- */
 @import "compass/reset"; 
 @import "utility";
 @import "launchrock";
 
-/* -- colors -- */
-$mscuro: rgb(57,48,43);
-$bianco: rgb(255,255,255);
-$vchiaro: rgb(196,199,46);
+$darkbrown: rgb(57,48,43);
+$white: rgb(255,255,255);
+$lightgreen: rgb(196,199,46);
+$lightgrey: #dad9d7;
+$grey: #efebe8;
 
-body{
+$font: 'Yanone Kaffeesatz';
+
+body
+{
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegibility;
+	background-color: $grey;
+	font-family: sans-serif;
+	color: $darkbrown;
 }
 
-/* --- mostrobox! --- */
-.mostro-box{
+a 
+{
+	text-decoration: none;
+}
+
+article
+{
+	overflow: hidden;
+}
+
+.mostro-box
+{
 	height: 450px;
-	background-color: $mscuro;
+	background-color: $darkbrown;
 	position: relative;
 }
 
-.main-title{
+.main-title
+{
 	pointer-events: none;
 	position: absolute;
 	top: 100px;
@@ -36,13 +53,211 @@ body{
 	text-align: center;
 	font-size: 60px;
 	padding: 40px 0;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-family: $font, sans-serif;
 	font-weight: bold;
-	color: $bianco;
-	em{ color: $vchiaro; }
-  text-shadow:
-   -2px -2px 0 $mscuro,  
-    2px -2px 0 $mscuro,
-    -2px 2px 0 $mscuro,
-     2px 2px 0 $mscuro;
+	color: $white;
+	em 
+	{ 
+		color: $lightgreen; 
+	}
+}
+
+.title
+{
+	font-family: $font;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+#monsters-canvas
+{
+	outline: none;
+}
+
+#main,
+#header
+{
+	width: 940px;
+	margin: 0px auto;
+}
+
+#header-container
+{
+	background-color: $white;
+	line-height: 130px;
+	border-bottom: 1px solid $lightgrey;
+	margin-bottom: 50px;
+}
+
+#navigation
+{
+	float: right;
+}
+
+#menu li:nth-child(n+2):before {
+    content: " / ";
+	padding: 0px 15px;
+}
+
+#menu li
+{
+	display: inline;
+}
+
+#menu a
+{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: $darkbrown;
+}
+
+#logo
+{
+	vertical-align: middle;
+}
+
+#intro
+{
+	text-align: center;
+	height: 300px;
+	border-bottom: 1px solid $lightgrey;
+	margin-bottom: 40px;
+	background-image: url("img/monster.png");
+	background-repeat: no-repeat;
+	background-position: center 356px;
+}
+
+#intro-title
+{
+	margin-bottom: 20px;
+}
+
+#conf-description
+{
+	column-count: 2;
+	padding-bottom: 40px;
+	border-bottom: 1px solid $lightgrey;
+	margin-bottom: 100px;
+}
+
+.event
+{
+	position: relative;
+}
+
+.event-content
+{
+	float: right;
+	width: 650px;
+	margin-bottom: 100px;
+	padding-left: 200px;
+	border-left: 3px solid $lightgrey;
+}
+
+.event-date
+{
+	color: $lightgreen;
+	font-size: 18px;
+}
+
+.event-year
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-family: $font;
+	font-size: 60px;
+	color: $darkbrown;
+	background-color: $grey;
+	padding: 15px 0px 30px 40px;
+}
+
+.event-title 
+{
+	margin: 10px 0px 30px 0px;
+}
+
+#slides
+{
+	width: 1271px !important;
+	margin: 0px auto;
+}
+
+#slides img:nth-child(n+2) {
+	padding-left: 30px;
+}
+
+.slide
+{
+	width: 1271px !important;
+}
+
+.slidesjs-pagination
+{
+	position: relative;
+	left: calc(50% - 25px);
+	padding: 30px 0px;
+}
+
+.slidesjs-pagination-item
+{
+	display: inline-block;
+}
+
+.slidesjs-pagination-item:nth-child(n+2) 
+{
+	margin-left: 10px;
+}
+
+.slidesjs-pagination-item a
+{
+	display: block;
+	text-indent: -999px;
+	background-color: $darkbrown;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+}
+
+.slidesjs-pagination-item a.active
+{
+	background-color: $lightgreen;
+}
+
+#footer-container
+{
+	background-color: $darkbrown;
+}
+
+#footer
+{
+	width: 830px;
+	margin: 0px auto;
+	color: $white;
+	overflow: hidden;
+	padding: 50px 0px 140px 0px;
+}
+
+#call-for-paper
+{
+	float: right;
+	width: 510px;
+}
+
+#footer a 
+{
+	color: $lightgreen;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+#social
+{
+	margin-top: 30px;
+}
+
+#social li 
+{
+	display: inline-block;
+	margin-right: 15px;
 }

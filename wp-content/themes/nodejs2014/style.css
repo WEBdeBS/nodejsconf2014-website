@@ -4,8 +4,7 @@ Description: NodeJSConf 2014 theme
 Author: NodeJSConf Team
 Version: 1.0
 */
-/* -- reset -- */
-/* line 17, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,45 +26,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -144,37 +143,249 @@ input.LR-share-email-emails[type="email"] {
   max-width: none !important;
 }
 
-/* -- colors -- */
-/* line 18, scss/style.scss */
+/* line 21, scss/style.scss */
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
+  background-color: #efebe8;
+  font-family: sans-serif;
+  color: #39302b;
 }
 
-/* --- mostrobox! --- */
-/* line 24, scss/style.scss */
+/* line 30, scss/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 35, scss/style.scss */
+article {
+  overflow: hidden;
+}
+
+/* line 40, scss/style.scss */
 .mostro-box {
   height: 450px;
   background-color: #39302b;
   position: relative;
 }
 
-/* line 29, scss/style.scss */
+/* line 47, scss/style.scss */
 .main-title {
-  position: absolute;
   pointer-events: none;
+  position: absolute;
   top: 100px;
   left: 0;
   right: 0;
   text-align: center;
   font-size: 60px;
   padding: 40px 0;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   font-weight: bold;
   color: white;
-  text-shadow: -2px -2px 0 #39302b, 2px -2px 0 #39302b, -2px 2px 0 #39302b, 2px 2px 0 #39302b;
 }
-/* line 40, scss/style.scss */
+/* line 60, scss/style.scss */
 .main-title em {
   color: #c4c72e;
+}
+
+/* line 66, scss/style.scss */
+.title {
+  font-family: "Yanone Kaffeesatz";
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/* line 73, scss/style.scss */
+#monsters-canvas {
+  outline: none;
+}
+
+/* line 79, scss/style.scss */
+#main,
+#header {
+  width: 940px;
+  margin: 0px auto;
+}
+
+/* line 85, scss/style.scss */
+#header-container {
+  background-color: white;
+  line-height: 130px;
+  border-bottom: 1px solid #dad9d7;
+  margin-bottom: 50px;
+}
+
+/* line 93, scss/style.scss */
+#navigation {
+  float: right;
+}
+
+/* line 97, scss/style.scss */
+#menu li:nth-child(n+2):before {
+  content: " / ";
+  padding: 0px 15px;
+}
+
+/* line 103, scss/style.scss */
+#menu li {
+  display: inline;
+}
+
+/* line 108, scss/style.scss */
+#menu a {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #39302b;
+}
+
+/* line 115, scss/style.scss */
+#logo {
+  vertical-align: middle;
+}
+
+/* line 120, scss/style.scss */
+#intro {
+  text-align: center;
+  height: 300px;
+  border-bottom: 1px solid #dad9d7;
+  margin-bottom: 40px;
+  background-image: url("img/monster.png");
+  background-repeat: no-repeat;
+  background-position: center 356px;
+}
+
+/* line 131, scss/style.scss */
+#intro-title {
+  margin-bottom: 20px;
+}
+
+/* line 136, scss/style.scss */
+#conf-description {
+  column-count: 2;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dad9d7;
+  margin-bottom: 100px;
+}
+
+/* line 144, scss/style.scss */
+.event {
+  position: relative;
+}
+
+/* line 149, scss/style.scss */
+.event-content {
+  float: right;
+  width: 650px;
+  margin-bottom: 100px;
+  padding-left: 200px;
+  border-left: 3px solid #dad9d7;
+}
+
+/* line 158, scss/style.scss */
+.event-date {
+  color: #c4c72e;
+  font-size: 18px;
+}
+
+/* line 164, scss/style.scss */
+.event-year {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: "Yanone Kaffeesatz";
+  font-size: 60px;
+  color: #39302b;
+  background-color: #efebe8;
+  padding: 15px 0px 30px 40px;
+}
+
+/* line 176, scss/style.scss */
+.event-title {
+  margin: 10px 0px 30px 0px;
+}
+
+/* line 181, scss/style.scss */
+#slides {
+  width: 1271px !important;
+  margin: 0px auto;
+}
+
+/* line 186, scss/style.scss */
+#slides img:nth-child(n+2) {
+  padding-left: 30px;
+}
+
+/* line 191, scss/style.scss */
+.slide {
+  width: 1271px !important;
+}
+
+/* line 196, scss/style.scss */
+.slidesjs-pagination {
+  position: relative;
+  left: calc(50% - 25px);
+  padding: 30px 0px;
+}
+
+/* line 203, scss/style.scss */
+.slidesjs-pagination-item {
+  display: inline-block;
+}
+
+/* line 208, scss/style.scss */
+.slidesjs-pagination-item:nth-child(n+2) {
+  margin-left: 10px;
+}
+
+/* line 213, scss/style.scss */
+.slidesjs-pagination-item a {
+  display: block;
+  text-indent: -999px;
+  background-color: #39302b;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+/* line 223, scss/style.scss */
+.slidesjs-pagination-item a.active {
+  background-color: #c4c72e;
+}
+
+/* line 228, scss/style.scss */
+#footer-container {
+  background-color: #39302b;
+}
+
+/* line 233, scss/style.scss */
+#footer {
+  width: 830px;
+  margin: 0px auto;
+  color: white;
+  overflow: hidden;
+  padding: 50px 0px 140px 0px;
+}
+
+/* line 242, scss/style.scss */
+#call-for-paper {
+  float: right;
+  width: 510px;
+}
+
+/* line 248, scss/style.scss */
+#footer a {
+  color: #c4c72e;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* line 255, scss/style.scss */
+#social {
+  margin-top: 30px;
+}
+
+/* line 260, scss/style.scss */
+#social li {
+  display: inline-block;
+  margin-right: 15px;
 }
