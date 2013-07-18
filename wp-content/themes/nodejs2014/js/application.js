@@ -19,6 +19,20 @@ require(['jquery','vendor/processing-1.4.1.min'], function ($) {
 			[ $canvas.attr("data-processing-sources") ]
 		);
 
+	// load dinamically page tokens
+    $('*[data-load]').each(function(n,e){
+      $(e).load($(e).attr("data-load"));
+    });
+
+    // handle navigation
+    $('#navigation').on('click','a',function(){
+    	var url_token = $(this).attr('href').split("/");
+    	console.log(url_token);
+    	window.location.hash = url_token[url_token.length - 1];
+    	return false;
+    });
+
+
 	$("#slides").slidesjs({
 		width: 1271,
         height: 300,

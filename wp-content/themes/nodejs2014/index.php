@@ -1,3 +1,7 @@
+<?php
+	$locations = get_nav_menu_locations();
+	$pages = wp_get_nav_menu_items($locations['primary_menu']);
+?>
 <!doctype html>
 <!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
@@ -44,87 +48,32 @@
 
 		<div id="header-container">
 			<header id="header">
-				<nav id="navigation">
-					<ul id="menu">
-						<li>
-							<a href="#" title="">
-								WEBdeBS
-							</a>
-						</li>
-						<li>
-							<a href="#" title="">
-								Workshop
-							</a>
-						</li>
-						<li>
-							<a href="#" title="">
-								Sponsor
-							</a>
-						</li>
-						<li>
-							<a href="#" title="">
-								Contact
-							</a>
-						</li>
-					</ul>
-				</nav>
+
+				<?php wp_nav_menu(array(  
+					'theme_location' => 'primary_menu',
+					'container' => 'nav',
+					'container_id' => 'navigation',
+					'menu_id' => 'menu'
+				)); ?>
+
 				<a href="/" title="<?php bloginfo('name') ?>">
 					<img id="logo" src="<?php echo get_stylesheet_directory_uri() ?>/img/logo.png" alt="<?php bloginfo('name') ?>">
 				</a> 	
 			</header>
 		</div>
 		<div id="main">
-			<article id="intro">
-				<header>
-					<h1 id="intro-title" class="title">
-						WEBdeBS
-					</h1>
-				</header>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a eros tortor. Nunc ipsum erat, cursus et dictum vitae, bibendum at tortor. Vivamus aliquam, nibh eu feugiat lacinia, sapien leo placerat urna, at vulputate purus mi et libero. Proin vel ullamcorper massa. Donec sollicitudin fringilla nunc, ac egestas ligula ultrices nec. Proin quis tortor non erat faucibus eleifend. Ut luctus arcu nisl, id varius elit egestas at.
-				</p>
+
+			<article id="intro" data-load="<?php $curpage = array_shift($pages); echo get_permalink($curpage->object_id); ?>">
 			</article>
-			<article>
-				<p id="conf-description">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a eros tortor. Nunc ipsum erat, cursus et dictum vitae, bibendum at tortor. Vivamus aliquam, nibh eu feugiat lacinia, sapien leo placerat urna, at vulputate purus mi et libero. Proin vel ullamcorper massa. Donec sollicitudin fringilla nunc, ac egestas ligula ultrices nec. Proin quis tortor non erat faucibus eleifend. Ut luctus arcu nisl, id varius elit egestas at.
-				</p>
+
+			<article id="conf-description" data-load="<?php $curpage = array_shift($pages); echo get_permalink($curpage->object_id); ?>">
 			</article>
-			<article class="event">
-				<div class="event-content">
-					<header>
-						<h2 class="event-date">
-							25 january 
-							<span class="event-year">
-								2014
-							</span>	
-						</h2>
-						<h1 class="event-title title">
-							III Node.js Conf
-						</h1>
-					</header>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a eros tortor. Nunc ipsum erat, cursus et dictum vitae, bibendum at tortor. Vivamus aliquam, nibh eu feugiat lacinia, sapien leo placerat urna, at vulputate purus mi et libero. Proin vel ullamcorper massa. Donec sollicitudin fringilla nunc, ac egestas ligula ultrices nec. Proin quis tortor non erat faucibus eleifend. Ut luctus arcu nisl, id varius elit egestas at.
-					</p>
-				</div>
-			</article>
-			<article class="event">
-				<div class="event-content">
-					<header>
-						<h2 class="event-date">
-							25 january 
-							<span class="event-year">
-								2014
-							</span>	
-						</h2>
-						<h1 class="event-title title">
-							III Node.js Conf
-						</h1>
-					</header>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a eros tortor. Nunc ipsum erat, cursus et dictum vitae, bibendum at tortor. Vivamus aliquam, nibh eu feugiat lacinia, sapien leo placerat urna, at vulputate purus mi et libero. Proin vel ullamcorper massa. Donec sollicitudin fringilla nunc, ac egestas ligula ultrices nec. Proin quis tortor non erat faucibus eleifend. Ut luctus arcu nisl, id varius elit egestas at.
-					</p>
-				</div>
-			</article>
+
+			<?php foreach ($pages as $curpage) { ?>
+				<article class="event" data-load="<?php echo get_permalink($curpage->object_id); ?>">
+				</article>
+			<?php } ?>
+
 		</div>
 		<div id="slides">
 			<div class="slide">
