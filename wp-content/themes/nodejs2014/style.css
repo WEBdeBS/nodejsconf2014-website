@@ -326,15 +326,16 @@ article {
 
 /* line 201, scss/style.scss */
 #slides img {
-  padding: 5px;
+  margin: 5px;
+  box-sizing: border-box;
 }
 
-/* line 206, scss/style.scss */
+/* line 207, scss/style.scss */
 #slides-pagination {
   text-align: center;
   padding: 30px 0px;
 }
-/* line 210, scss/style.scss */
+/* line 211, scss/style.scss */
 #slides-pagination a {
   display: inline-block;
   text-indent: -999px;
@@ -345,17 +346,17 @@ article {
   height: 10px;
   margin: 0 3px;
 }
-/* line 220, scss/style.scss */
+/* line 221, scss/style.scss */
 #slides-pagination a.selected {
   background-color: #c4c72e;
 }
 
-/* line 228, scss/style.scss */
+/* line 229, scss/style.scss */
 #footer-container {
   background-color: #39302b;
 }
 
-/* line 233, scss/style.scss */
+/* line 234, scss/style.scss */
 #footer {
   width: 830px;
   margin: 0px auto;
@@ -364,25 +365,25 @@ article {
   padding: 50px 0px 140px 0px;
 }
 
-/* line 242, scss/style.scss */
+/* line 243, scss/style.scss */
 #call-for-paper {
   float: right;
   width: 510px;
 }
 
-/* line 248, scss/style.scss */
+/* line 249, scss/style.scss */
 #footer a {
   color: #c4c72e;
   font-size: 20px;
   text-transform: uppercase;
 }
 
-/* line 255, scss/style.scss */
+/* line 256, scss/style.scss */
 #social {
   margin-top: 30px;
 }
 
-/* line 260, scss/style.scss */
+/* line 261, scss/style.scss */
 #social li {
   display: inline-block;
   margin-right: 15px;

@@ -72,7 +72,7 @@ class NodeMonster extends Monster{
 // Global variables
 boolean mouse = false;
 int monsters_number = 15;
-int max_width = window.innerWidth;
+int max_width = $('body').width();
 int max_height = $('.mostro-box').height();
 Monster[] monsters = new Monster[monsters_number];
 
@@ -92,7 +92,7 @@ void draw(){
     monsters[x].computeNextStep();
   }
 
-  size(window.innerWidth,$('.mostro-box').height());
+  size($('body').width(),$('.mostro-box').height());
   background(0,0);
 
   for(int x=0; x<monsters_number; x++){

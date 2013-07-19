@@ -35,6 +35,7 @@ require(['jquery','vendor/processing-1.4.1.min', 'vendor/jquery.carouFredSel-6.2
     $("#slides").carouFredSel({
 		responsive: true,
 		pagination: '#slides-pagination',
+		width: "100%",
 		items: {
 			width: 200,
 			visible: 3
