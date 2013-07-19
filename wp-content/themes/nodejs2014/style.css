@@ -324,60 +324,38 @@ article {
   margin: 10px 0px 30px 0px;
 }
 
-/* line 202, scss/style.scss */
-#slides {
-  width: 1271px !important;
-  margin: 0px auto;
+/* line 201, scss/style.scss */
+#slides img {
+  padding: 5px;
 }
 
-/* line 207, scss/style.scss */
-#slides img:nth-child(n+2) {
-  padding-left: 30px;
-}
-
-/* line 212, scss/style.scss */
-.slide {
-  width: 1271px !important;
-}
-
-/* line 217, scss/style.scss */
-.slidesjs-pagination {
-  position: relative;
-  left: calc(50% - 25px);
+/* line 206, scss/style.scss */
+#slides-pagination {
+  text-align: center;
   padding: 30px 0px;
 }
-
-/* line 224, scss/style.scss */
-.slidesjs-pagination-item {
+/* line 210, scss/style.scss */
+#slides-pagination a {
   display: inline-block;
-}
-
-/* line 229, scss/style.scss */
-.slidesjs-pagination-item:nth-child(n+2) {
-  margin-left: 10px;
-}
-
-/* line 234, scss/style.scss */
-.slidesjs-pagination-item a {
-  display: block;
   text-indent: -999px;
+  overflow: hidden;
   background-color: #39302b;
   border-radius: 50%;
   width: 10px;
   height: 10px;
+  margin: 0 3px;
 }
-
-/* line 244, scss/style.scss */
-.slidesjs-pagination-item a.active {
+/* line 220, scss/style.scss */
+#slides-pagination a.selected {
   background-color: #c4c72e;
 }
 
-/* line 249, scss/style.scss */
+/* line 228, scss/style.scss */
 #footer-container {
   background-color: #39302b;
 }
 
-/* line 254, scss/style.scss */
+/* line 233, scss/style.scss */
 #footer {
   width: 830px;
   margin: 0px auto;
@@ -386,25 +364,25 @@ article {
   padding: 50px 0px 140px 0px;
 }
 
-/* line 263, scss/style.scss */
+/* line 242, scss/style.scss */
 #call-for-paper {
   float: right;
   width: 510px;
 }
 
-/* line 269, scss/style.scss */
+/* line 248, scss/style.scss */
 #footer a {
   color: #c4c72e;
   font-size: 20px;
   text-transform: uppercase;
 }
 
-/* line 276, scss/style.scss */
+/* line 255, scss/style.scss */
 #social {
   margin-top: 30px;
 }
 
-/* line 281, scss/style.scss */
+/* line 260, scss/style.scss */
 #social li {
   display: inline-block;
   margin-right: 15px;

@@ -24,6 +24,7 @@
 
 		<!-- modernizr -->
 		<script src="<?php echo get_stylesheet_directory_uri() ?>/vendor/modernizr.js"></script>
+		<script src="<?php echo get_stylesheet_directory_uri() ?>/vendor/prefixfree.min.js"></script>
 
 		<?php wp_head(); ?>
 	</head>
@@ -76,22 +77,18 @@
 
 		</div>
 		<div id="slides">
-			<div class="slide">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
-			</div>
-			<div class="slide">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
-			</div>
-			<div class="slide">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
-			</div>
+			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
+			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
+			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
+			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
+			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
+			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
+			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
+			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
+			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
 		</div>
+		<div id="slides-pagination"></div>
+
 		<div id="footer-container">
 			<footer id="footer">
 				<div id="call-for-paper">
@@ -121,8 +118,6 @@
 		</div>
 
 		<!-- javascript -->
-		<script src="<?php echo get_stylesheet_directory_uri() ?>/vendor/prefixfree.min.js"></script>
-		<script src="<?php echo get_stylesheet_directory_uri() ?>/vendor/jquery.slides.min.js"></script>
 		<script data-main="<?php echo get_stylesheet_directory_uri() ?>/js/application.js" 
 				src="<?php echo get_stylesheet_directory_uri() ?>/vendor/require.js">
 		</script>

@@ -10,7 +10,7 @@ define('jquery', function(){
 	return jQuery;
 })
 
-require(['jquery','vendor/processing-1.4.1.min'], function ($) {
+require(['jquery','vendor/processing-1.4.1.min', 'vendor/jquery.carouFredSel-6.2.1-packed'], function ($) {
 
 	// load processing animation
 	var $canvas = $('canvas'),
@@ -32,12 +32,15 @@ require(['jquery','vendor/processing-1.4.1.min'], function ($) {
     	return false;
     });
 
-
-	$("#slides").slidesjs({
-		width: 1271,
-        height: 300,
-        navigation: false
+    $("#slides").carouFredSel({
+		responsive: true,
+		pagination: '#slides-pagination',
+		items: {
+			width: 200,
+			visible: 3
+		}
 	});
+
 
 	var $window = $(window);
 	var headerTop = $("#header").position().top;
