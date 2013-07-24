@@ -41,8 +41,7 @@ require(['jquery','vendor/processing-1.4.1.min', 'vendor/jquery.carouFredSel-6.2
 			visible: 3
 		}
 	});
-
-
+	
 	var $window = $(window);
 	var headerTop = $("#header").position().top;
 	var intro = $("#intro");

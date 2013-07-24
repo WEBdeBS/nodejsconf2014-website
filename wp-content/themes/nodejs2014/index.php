@@ -77,15 +77,15 @@
 
 		</div>
 		<div id="slides">
-			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
-			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
-			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
-			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
-			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
-			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
-			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
-			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
-			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cirpo.png" alt="">
+			<?php 
+				$attachments = get_attachments_by_id(12);
+				foreach ($attachments as $attachment):
+					$attributes = wp_get_attachment_image_src($attachment->ID, "full");
+			?>
+				<img src="<?php echo $attributes[0]; ?>" alt="">
+			<?php
+				endforeach;
+			?>
 		</div>
 		<div id="slides-pagination"></div>
 
