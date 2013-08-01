@@ -15,4 +15,6 @@ function get_attachments_by_id($id) {
 
 }
 
+add_image_size( 'gallery', 500, 375, true );
+
 ?>

@@ -101,7 +101,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 1, scss/_launchrock.scss */
 .LR-box {
-  width: 500px !important;
+  width: 530px !important;
   position: absolute;
   top: 230px;
   left: 50%;
@@ -109,36 +109,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 10, scss/_launchrock.scss */
+.LR-sign-up-submit {
+  width: 150px !important;
+}
+
+/* line 14, scss/_launchrock.scss */
 .LR-site-share .LR-site-share-container, .LR-site-share-email {
   background: transparent !important;
   padding: 0 !important;
   border: 0 !important;
 }
 
-/* line 16, scss/_launchrock.scss */
+/* line 20, scss/_launchrock.scss */
 .LR-site-share-email {
   position: relative;
   top: -28px;
 }
 
-/* line 21, scss/_launchrock.scss */
+/* line 25, scss/_launchrock.scss */
 .LR-site-share-email input[type="text"], .LR-site-share-email input[type="email"], .LR-site-share-email textarea, input.LR-share-link {
   width: 419px !important;
 }
 
-/* line 25, scss/_launchrock.scss */
+/* line 29, scss/_launchrock.scss */
 input.LR-share-email-emails[type="email"] {
   width: 247px !important;
   position: relative;
   left: 24px;
 }
 
-/* line 31, scss/_launchrock.scss */
+/* line 35, scss/_launchrock.scss */
 .LR-share-email-import {
   top: 0 !important;
 }
 
-/* line 35, scss/_launchrock.scss */
+/* line 39, scss/_launchrock.scss */
 .LR-site-share-email textarea {
   max-width: none !important;
 }
@@ -152,30 +157,35 @@ body {
   color: #39302b;
 }
 
-/* line 30, scss/style.scss */
+/* line 29, scss/style.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 34, scss/style.scss */
 a {
   text-decoration: none;
   color: #39302b;
 }
 
-/* line 35, scss/style.scss */
+/* line 39, scss/style.scss */
 p > a {
   text-decoration: underline;
 }
 
-/* line 40, scss/style.scss */
+/* line 44, scss/style.scss */
 article {
   overflow: hidden;
 }
 
-/* line 45, scss/style.scss */
+/* line 49, scss/style.scss */
 .mostro-box {
   height: 450px;
   background-color: #39302b;
   position: relative;
 }
 
-/* line 52, scss/style.scss */
+/* line 56, scss/style.scss */
 .main-title {
   pointer-events: none;
   position: absolute;
@@ -190,31 +200,31 @@ article {
   color: white;
   text-shadow: 2px 2px 0 #39302b, 2px -2px 0 #39302b, -2px -2px 0 #39302b, -2px 2px 0 #39302b;
 }
-/* line 69, scss/style.scss */
+/* line 73, scss/style.scss */
 .main-title em {
   color: #c4c72e;
 }
 
-/* line 75, scss/style.scss */
+/* line 79, scss/style.scss */
 .title {
   font-family: "Yanone Kaffeesatz";
   font-weight: bold;
   font-size: 40px;
 }
 
-/* line 82, scss/style.scss */
+/* line 86, scss/style.scss */
 #monsters-canvas {
   outline: none;
 }
 
-/* line 88, scss/style.scss */
+/* line 92, scss/style.scss */
 #main,
 #header {
   width: 940px;
   margin: 0px auto;
 }
 
-/* line 94, scss/style.scss */
+/* line 98, scss/style.scss */
 #header-container {
   background-color: white;
   line-height: 130px;
@@ -222,35 +232,35 @@ article {
   margin-bottom: 50px;
 }
 
-/* line 102, scss/style.scss */
+/* line 106, scss/style.scss */
 #navigation {
   float: right;
 }
 
-/* line 106, scss/style.scss */
+/* line 110, scss/style.scss */
 #menu li:nth-child(n+2):before {
   content: " / ";
   padding: 0px 15px;
 }
 
-/* line 112, scss/style.scss */
+/* line 116, scss/style.scss */
 #menu li {
   display: inline;
 }
 
-/* line 117, scss/style.scss */
+/* line 121, scss/style.scss */
 #menu a {
   text-transform: uppercase;
   font-size: 14px;
   color: #39302b;
 }
 
-/* line 124, scss/style.scss */
+/* line 128, scss/style.scss */
 #logo {
   vertical-align: middle;
 }
 
-/* line 129, scss/style.scss */
+/* line 133, scss/style.scss */
 #intro {
   text-align: center;
   height: 300px;
@@ -260,39 +270,39 @@ article {
   background-repeat: no-repeat;
   background-position: center 356px;
 }
-/* line 138, scss/style.scss */
+/* line 142, scss/style.scss */
 #intro h1 {
   margin-bottom: 20px;
 }
 
-/* line 141, scss/style.scss */
+/* line 145, scss/style.scss */
 .hook {
   position: relative;
   top: -125px;
 }
 
-/* line 148, scss/style.scss */
+/* line 152, scss/style.scss */
 #conf-description div {
   column-count: 2;
   padding-bottom: 40px;
   border-bottom: 1px solid #dad9d7;
   margin-bottom: 100px;
 }
-/* line 155, scss/style.scss */
+/* line 159, scss/style.scss */
 #conf-description p {
   margin: 0 0 10px 0;
 }
-/* line 159, scss/style.scss */
+/* line 163, scss/style.scss */
 #conf-description header {
   display: none;
 }
 
-/* line 165, scss/style.scss */
+/* line 169, scss/style.scss */
 .event {
   position: relative;
 }
 
-/* line 170, scss/style.scss */
+/* line 174, scss/style.scss */
 .event-content {
   float: right;
   width: 650px;
@@ -301,13 +311,13 @@ article {
   border-left: 3px solid #dad9d7;
 }
 
-/* line 179, scss/style.scss */
+/* line 183, scss/style.scss */
 .event-date {
   color: #c4c72e;
   font-size: 18px;
 }
 
-/* line 185, scss/style.scss */
+/* line 189, scss/style.scss */
 .event-year {
   position: absolute;
   top: 0px;
@@ -319,23 +329,23 @@ article {
   padding: 15px 0px 30px 40px;
 }
 
-/* line 197, scss/style.scss */
+/* line 201, scss/style.scss */
 .event-title {
   margin: 10px 0px 30px 0px;
 }
 
-/* line 201, scss/style.scss */
+/* line 205, scss/style.scss */
 #slides img {
   margin: 5px;
   box-sizing: border-box;
 }
 
-/* line 207, scss/style.scss */
+/* line 211, scss/style.scss */
 #slides-pagination {
   text-align: center;
   padding: 30px 0px;
 }
-/* line 211, scss/style.scss */
+/* line 215, scss/style.scss */
 #slides-pagination a {
   display: inline-block;
   text-indent: -999px;
@@ -346,17 +356,17 @@ article {
   height: 10px;
   margin: 0 3px;
 }
-/* line 221, scss/style.scss */
+/* line 225, scss/style.scss */
 #slides-pagination a.selected {
   background-color: #c4c72e;
 }
 
-/* line 229, scss/style.scss */
+/* line 233, scss/style.scss */
 #footer-container {
   background-color: #39302b;
 }
 
-/* line 234, scss/style.scss */
+/* line 238, scss/style.scss */
 #footer {
   width: 830px;
   margin: 0px auto;
@@ -365,25 +375,25 @@ article {
   padding: 50px 0px 140px 0px;
 }
 
-/* line 243, scss/style.scss */
+/* line 247, scss/style.scss */
 #call-for-paper {
   float: right;
   width: 510px;
 }
 
-/* line 249, scss/style.scss */
+/* line 253, scss/style.scss */
 #footer a {
   color: #c4c72e;
   font-size: 20px;
   text-transform: uppercase;
 }
 
-/* line 256, scss/style.scss */
+/* line 260, scss/style.scss */
 #social {
   margin-top: 30px;
 }
 
-/* line 261, scss/style.scss */
+/* line 265, scss/style.scss */
 #social li {
   display: inline-block;
   margin-right: 15px;

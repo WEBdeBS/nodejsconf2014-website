@@ -64,23 +64,61 @@
 		</div>
 		<div id="main">
 
-			<article id="intro" data-load="<?php $curpage = array_shift($pages); echo get_permalink($curpage->object_id); ?>">
+			<article id="intro">
+				<a id="<?php $curpage = array_shift($pages); $curpage = get_post($curpage->object_id); echo $curpage->post_name; ?>" class="hook">sss</a>
+
+				<header>
+					<h1 class="title">
+						<?php  echo $curpage->post_title; ?>
+					</h1>
+				</header>
+				<div>
+					<?php echo apply_filters("the_content", $curpage->post_content); ?>
+				</div>			
 			</article>
 
-			<article id="conf-description" data-load="<?php $curpage = array_shift($pages); echo get_permalink($curpage->object_id); ?>">
+			<article id="conf-description">
+				<a id="<?php $curpage = array_shift($pages); $curpage = get_post($curpage->object_id); echo $curpage->post_name; ?>" class="hook">sss</a>
+
+				<header>
+					<h1 class="title">
+						<?php  echo $curpage->post_title; ?>
+					</h1>
+				</header>
+				<div>
+					<?php echo apply_filters("the_content", $curpage->post_content); ?>
+				</div>			
 			</article>
 
 			<?php foreach ($pages as $curpage) { ?>
-				<article class="event" data-load="<?php echo get_permalink($curpage->object_id); ?>">
+				<article class="event">
+					<a id="<?php $curpage = get_post($curpage->object_id); echo $curpage->post_name; ?>" class="hook"></a>
+
+					<div class="event-content">
+						<header>
+							<h2 class="event-date">
+								<?php echo get_post_meta($curpage->ID, 'event-day', true); ?>
+								<span class="event-year">
+									<?php echo get_post_meta($curpage->ID, 'event-year', true); ?>
+								</span>	
+							</h2>
+							<h1 class="event-title title">
+								<?php  echo $curpage->post_title; ?>
+							</h1>
+						</header>
+						<div>
+							<?php echo apply_filters("the_content", $curpage->post_content); ?>
+						</div>
+					</div>					
 				</article>
 			<?php } ?>
 
 		</div>
 		<div id="slides">
 			<?php 
-				$attachments = get_attachments_by_id(12);
+				$attachments = get_attachments_by_id($post->ID);
 				foreach ($attachments as $attachment):
-					$attributes = wp_get_attachment_image_src($attachment->ID, "full");
+					$attributes = wp_get_attachment_image_src($attachment->ID, "gallery");
 			?>
 				<img src="<?php echo $attributes[0]; ?>" alt="">
 			<?php
@@ -93,27 +131,22 @@
 			<footer id="footer">
 				<div id="call-for-paper">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a eros tortor. Nunc ipsum erat, cursus et dictum vitae, bibendum at tortor. Vivamus aliquam, nibh eu feugiat lacinia, sapien leo placerat urna, at vulputate purus mi et libero. Proin vel ullamcorper massa. Donec sollicitudin fringilla nunc, ac egestas ligula ultrices nec. Proin quis tortor non erat faucibus eleifend. Ut luctus arcu nisl, id varius elit egestas at.
+						Follow us to stay tuned with the latest updates about call for paper, registration and 
+						more! 
 					</p>
 					<ul id="social">
 						<li>
-							<a href="#" title="">
+							<a target="_blank" href="https://twitter.com/nodejsconfit" title="">
 								Twitter
 							</a>
 						</li>
 						<li>
-							<a href="#" title="">
+							<a target="_blank" href="https://www.facebook.com/nodejsconf" title="">
 								Facebook
 							</a>
 						</li>
 					</ul>
 				</div>
-				<span>
-					Social
-				</span>
-				<span>
-					Seguici
-				</span>
 			</footer>
 		</div>
 
