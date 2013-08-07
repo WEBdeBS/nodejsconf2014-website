@@ -41,6 +41,8 @@ require(['jquery','vendor/processing-1.4.1.min', 'vendor/jquery.carouFredSel-6.2
 			visible: 3
 		}
 	});
+
+	setTimeout(function(){$(".thanks-title").show()},2000);
 	
 	var $window = $(window);
 	var headerTop = $("#header").position().top;

@@ -37,6 +37,9 @@
 				<?php echo preg_replace("/_([^_]+)_/","<em>\$1</em>",get_bloginfo('description')); ?>
 			</h1>
 
+			<!-- thanks! -->
+			<p style="display:none;" class="thanks-title">Thanks! Check you inbox for a welcome message.</p>
+
 			<!-- Begin LaunchRock Widget -->
 			<div id="lr-widget" rel="MTBE93HI"></div>
 			<script type="text/javascript" src="//ignition.launchrock.com/ignition-current.min.js"></script>

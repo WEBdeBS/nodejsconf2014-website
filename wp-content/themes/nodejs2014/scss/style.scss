@@ -51,6 +51,17 @@ article
 	background-color: $darkbrown;
 	position: relative;
 }
+.thanks-title{
+	width: 530px;
+	position: absolute;
+	top: 235px;
+	left: 50%;
+	margin-left: -250px;
+	text-align: center;
+	font-size: 25px;
+	color: $white;
+	font-family: $font, sans-serif;
+}
 
 .main-title
 {
