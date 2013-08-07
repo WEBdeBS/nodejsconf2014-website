@@ -38,7 +38,7 @@
 			</h1>
 
 			<!-- thanks! -->
-			<p style="display:none;" class="thanks-title">Thanks! Check you inbox for a welcome message.</p>
+			<p style="display:none;" class="thanks-title">Thanks! Check your inbox for a welcome message.</p>
 
 			<!-- Begin LaunchRock Widget -->
 			<div id="lr-widget" rel="MTBE93HI"></div>
