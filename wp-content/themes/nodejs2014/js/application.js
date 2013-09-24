@@ -12,12 +12,16 @@ define('jquery', function(){
 
 require(['jquery','vendor/processing-1.4.1.min', 'vendor/jquery.carouFredSel-6.2.1-packed'], function ($) {
 
-	// load processing animation
-	var $canvas = $('canvas'),
-		mostri = Processing.loadSketchFromSources(
-			$canvas.get(0), 
-			[ $canvas.attr("data-processing-sources") ]
-		);
+	var page = "https://www.facebook.com/nodejsconf";
+	$.get("https://graph.facebook.com/?ids=" + page + "&fields=likes", function(json) {
+		$("body").data("likes", parseInt(json[page].likes / 6));
+		// load processing animation
+		var $canvas = $('canvas'),
+			mostri = Processing.loadSketchFromSources(
+				$canvas.get(0), 
+				[ $canvas.attr("data-processing-sources") ]
+			);
+	});
 
 	// load dinamically page tokens
     $('*[data-load]').each(function(n,e){
@@ -46,37 +50,29 @@ require(['jquery','vendor/processing-1.4.1.min', 'vendor/jquery.carouFredSel-6.2
 	
 	var $window = $(window);
 	var headerTop = $("#header").position().top;
-	var intro = $("#intro");
-	var introHeight = intro.height();
-	var monsterHeight = 56;
+	var call4paper = $("#call4paper");
+	var call4paperHeight = call4paper.height();
+	var monsterHeight = 105;
 
 	$window
 		.scroll(function() {
-
 			var scrollTop = $window.scrollTop();
-
 			if (scrollTop >= headerTop) {
-
-				var position = introHeight - (scrollTop - headerTop);
-				
-				if (position >= (introHeight - monsterHeight)) {
+				var position = call4paperHeight - (scrollTop - headerTop);
+				if (position >= (call4paperHeight - monsterHeight)) {
 					setPosition(position);
 				} else {
-					setPosition(introHeight - monsterHeight);
+					setPosition(call4paperHeight - monsterHeight);
 				}
-
 			} else {
-
-				setPosition(introHeight);
-
+				setPosition(call4paperHeight);
 			}
-
 		})
 		.scroll();
 
 	function setPosition(position) {
-		intro.css({
-			"background-position": "center " +  position + "px" 
+		call4paper.css({
+			"background-position": "right " +  position + "px" 
 		});
 	}
 

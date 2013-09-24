@@ -120,7 +120,7 @@ article
 
 #menu li:nth-child(n+2):before {
     content: " / ";
-	padding: 0px 15px;
+	padding: 0px 10px;
 }
 
 #menu li
@@ -143,12 +143,10 @@ article
 #intro
 {
 	text-align: center;
-	height: 300px;
+	height: 200px;
+	padding-bottom: 30px;
 	border-bottom: 1px solid $lightgrey;
 	margin-bottom: 40px;
-	background-image: url("img/monster.png");
-	background-repeat: no-repeat;
-	background-position: center 356px;
 
 	h1 { margin-bottom: 20px; }
 }
@@ -156,6 +154,47 @@ article
 .hook{
 	position: relative;
 	top: -125px;
+}
+
+#call4paper
+{
+	border-bottom: 1px solid $lightgrey;
+	margin-bottom: 40px;
+	background-image: url("img/monster.png");
+	background-repeat: no-repeat;
+	background-position: right 356px;
+	height: 280px;
+}
+
+#call4paper-header
+{
+	text-align: right;
+	font-size: 30px;
+	font-weight: bold;
+	color: $lightgreen;
+	font-family: $font;
+
+	h1
+	{
+		color: $darkbrown;
+		font-size: 130px;
+		text-transform: uppercase;
+
+		span
+		{
+			color: $lightgreen;
+		}
+	}
+
+	width: 49%;
+	float: left;
+}
+
+#call4paper-content
+{
+	margin: 40px 0px 0px 2%;
+	width: 49%;
+	float: left;
 }
 
 #conf-description 

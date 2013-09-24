@@ -71,7 +71,7 @@ class NodeMonster extends Monster{
 
 // Global variables
 boolean mouse = false;
-int monsters_number = 15;
+int monsters_number = $('body').data("likes");
 int max_width = $('body').width();
 int max_height = $('.mostro-box').height();
 Monster[] monsters = new Monster[monsters_number];

@@ -80,6 +80,20 @@
 				</div>			
 			</article>
 
+			<article id="call4paper">
+				<a id="<?php $curpage = array_shift($pages); $curpage = get_post($curpage->object_id); echo $curpage->post_name; ?>" class="hook">sss</a>
+
+				<header id="call4paper-header">
+					Closes <?php echo get_post_meta($curpage->ID, 'deadline', true); ?>
+					<h1 class="title">
+						<?php echo str_replace("4", "<span>4</span>", $curpage->post_title); ?>
+					</h1>
+				</header>
+				<div id="call4paper-content">
+					<?php echo apply_filters("the_content", $curpage->post_content); ?>
+				</div>			
+			</article>
+
 			<article id="conf-description">
 				<a id="<?php $curpage = array_shift($pages); $curpage = get_post($curpage->object_id); echo $curpage->post_name; ?>" class="hook">sss</a>
 
