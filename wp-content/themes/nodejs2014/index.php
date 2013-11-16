@@ -107,29 +107,127 @@
 				</div>			
 			</article>
 
-			<?php foreach ($pages as $curpage) { ?>
-				<article class="event">
-					<a id="<?php $curpage = get_post($curpage->object_id); echo $curpage->post_name; ?>" class="hook"></a>
+			<?php $curpage = array_shift($pages); ?>
+			<article class="event">
+				<a id="<?php $curpage = get_post($curpage->object_id); echo $curpage->post_name; ?>" class="hook"></a>
 
-					<div class="event-content">
-						<header>
-							<h2 class="event-date">
-								<?php echo get_post_meta($curpage->ID, 'event-day', true); ?>
-								<span class="event-year">
-									<?php echo get_post_meta($curpage->ID, 'event-year', true); ?>
-								</span>	
-							</h2>
-							<h1 class="event-title title">
-								<?php  echo $curpage->post_title; ?>
-							</h1>
-						</header>
-						<div>
-							<?php echo apply_filters("the_content", $curpage->post_content); ?>
-						</div>
-					</div>					
-				</article>
-			<?php } ?>
+				<div class="event-content">
+					<header>
+						<h2 class="event-date">
+							<?php echo get_post_meta($curpage->ID, 'event-day', true); ?>
+							<span class="event-year">
+								<?php echo get_post_meta($curpage->ID, 'event-year', true); ?>
+							</span>	
+						</h2>
+						<h1 class="event-title title">
+							<?php  echo $curpage->post_title; ?>
+						</h1>
+					</header>
+					<div>
+						<?php echo apply_filters("the_content", $curpage->post_content); ?>
+					</div>
+				</div>					
+			</article>
 
+			<?php $curpage = array_shift($pages); ?>
+			<article class="event">
+				<a id="<?php $curpage = get_post($curpage->object_id); echo $curpage->post_name; ?>" class="hook"></a>
+
+				<div class="event-content">
+					<header>
+						<h2 class="event-date">
+							<?php echo get_post_meta($curpage->ID, 'event-day', true); ?>
+							<span class="event-year">
+								<?php echo get_post_meta($curpage->ID, 'event-year', true); ?>
+							</span>	
+						</h2>
+						<img id="ws-logo" src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-ws.png" alt="">
+						<h1 id="ws-title" class="event-title title">
+							<?php  echo $curpage->post_title; ?>
+						</h1>
+					</header>
+					<div>
+						<?php echo apply_filters("the_content", $curpage->post_content); ?>
+					</div>
+					<div id="ws-info">
+						<iframe id="ws-map" width="350" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Talent+Garden+Brescia,+Via+Cipro,+Brescia,+Italy&amp;aq=1&amp;oq=talent+garden&amp;sll=37.0625,-95.677068&amp;sspn=58.816238,72.949219&amp;ie=UTF8&amp;hq=Talent+Garden&amp;hnear=Via+Cipro,+Brescia,+Lombardia,+Italy&amp;t=m&amp;cid=3778282868842465887&amp;ll=45.524751,10.210762&amp;spn=0.015033,0.029955&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+						<h3>
+							When
+						</h3>
+						<p>
+							14th December 2013
+						</p>
+						<h3>
+							Where
+						</h3>
+						<p>
+							Talent Garden - Brescia<br>
+							Via Cipro, 66 Brescia Italy
+						</p>
+						<h3>
+							How
+						</h3>
+						<p>
+							<a href="http://www.eventbrite.it/e/biglietti-workshop-nodejs-conf-2013-9189422811">
+								Buy your tickets
+							</a>
+						</p>
+					</div>
+					<ul id="ws-speakers">
+						<li>
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/lana.png" alt="">
+							<div class="ws-speaker-bio">
+								<h3>
+									Gabriele Lana -
+									<a href="https://twitter.com/gabrielelana">
+										@gabrielelana
+									</a>
+								</h3>
+								<p>
+									I proudly call myself “Software Craftsman”. I began to love this profession as a child at the end of the ’80s and this feelings never left me since then. Now I have more than 15 years of professional experience in many fields such as: industrial automation (soft realtime), medical, banks, insurance, monitoring, servers for MMO realtime games, distributed search engine, mobile games, online/mobile payment platform and others.
+								</p>
+							</div>
+						</li>
+						<li>
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/paganotti.png" alt="">
+							<div class="ws-speaker-bio">
+								<h3>
+									Sandro Paganotti -
+									<a href="https://twitter.com/sandropaganotti">
+										@sandropaganotti
+									</a>
+								</h3>
+								<p>
+									Sandro Paganotti (1983) is co-founder and software architect at Comparto Web. He loves developing web interfaces that showcase the full power of HTML5 and CSS3. He's author of "Designing next generation web Projects with CSS3" for Packt Publishing, technical writer for html.it, teacher at Accademia di belle arti Santa Giulia, Google Developer Expert in HTML5 and speaker at various technical events.
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>					
+			</article>
+
+			<?php $curpage = array_shift($pages); ?>
+			<article class="event">
+				<a id="<?php $curpage = get_post($curpage->object_id); echo $curpage->post_name; ?>" class="hook"></a>
+
+				<div class="event-content">
+					<header>
+						<h2 class="event-date">
+							<?php echo get_post_meta($curpage->ID, 'event-day', true); ?>
+							<span class="event-year">
+								<?php echo get_post_meta($curpage->ID, 'event-year', true); ?>
+							</span>	
+						</h2>
+						<h1 class="event-title title">
+							<?php  echo $curpage->post_title; ?>
+						</h1>
+					</header>
+					<div>
+						<?php echo apply_filters("the_content", $curpage->post_content); ?>
+					</div>
+				</div>					
+			</article>
+			
 		</div>
 		<div id="slides">
 			<?php 

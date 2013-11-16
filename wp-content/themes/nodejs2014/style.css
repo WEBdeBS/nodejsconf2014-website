@@ -148,7 +148,7 @@ input.LR-share-email-emails[type="email"] {
   max-width: none !important;
 }
 
-/* line 21, scss/style.scss */
+/* line 22, scss/style.scss */
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
@@ -157,35 +157,35 @@ body {
   color: #39302b;
 }
 
-/* line 29, scss/style.scss */
+/* line 30, scss/style.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 34, scss/style.scss */
+/* line 35, scss/style.scss */
 a {
   text-decoration: none;
   color: #39302b;
 }
 
-/* line 39, scss/style.scss */
+/* line 40, scss/style.scss */
 p > a {
   text-decoration: underline;
 }
 
-/* line 44, scss/style.scss */
+/* line 45, scss/style.scss */
 article {
   overflow: hidden;
 }
 
-/* line 49, scss/style.scss */
+/* line 50, scss/style.scss */
 .mostro-box {
   height: 450px;
   background-color: #39302b;
   position: relative;
 }
 
-/* line 54, scss/style.scss */
+/* line 55, scss/style.scss */
 .thanks-title {
   width: 530px;
   position: absolute;
@@ -198,7 +198,7 @@ article {
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
-/* line 67, scss/style.scss */
+/* line 68, scss/style.scss */
 .main-title {
   pointer-events: none;
   position: absolute;
@@ -213,31 +213,31 @@ article {
   color: white;
   text-shadow: 2px 2px 0 #39302b, 2px -2px 0 #39302b, -2px -2px 0 #39302b, -2px 2px 0 #39302b;
 }
-/* line 84, scss/style.scss */
+/* line 85, scss/style.scss */
 .main-title em {
   color: #c4c72e;
 }
 
-/* line 90, scss/style.scss */
+/* line 91, scss/style.scss */
 .title {
   font-family: "Yanone Kaffeesatz";
   font-weight: bold;
   font-size: 40px;
 }
 
-/* line 97, scss/style.scss */
+/* line 98, scss/style.scss */
 #monsters-canvas {
   outline: none;
 }
 
-/* line 103, scss/style.scss */
+/* line 104, scss/style.scss */
 #main,
 #header {
   width: 940px;
   margin: 0px auto;
 }
 
-/* line 109, scss/style.scss */
+/* line 110, scss/style.scss */
 #header-container {
   background-color: white;
   line-height: 130px;
@@ -245,35 +245,35 @@ article {
   margin-bottom: 50px;
 }
 
-/* line 117, scss/style.scss */
+/* line 118, scss/style.scss */
 #navigation {
   float: right;
 }
 
-/* line 121, scss/style.scss */
+/* line 122, scss/style.scss */
 #menu li:nth-child(n+2):before {
   content: " / ";
   padding: 0px 10px;
 }
 
-/* line 127, scss/style.scss */
+/* line 128, scss/style.scss */
 #menu li {
   display: inline;
 }
 
-/* line 132, scss/style.scss */
+/* line 133, scss/style.scss */
 #menu a {
   text-transform: uppercase;
   font-size: 14px;
   color: #39302b;
 }
 
-/* line 139, scss/style.scss */
+/* line 140, scss/style.scss */
 #logo {
   vertical-align: middle;
 }
 
-/* line 144, scss/style.scss */
+/* line 145, scss/style.scss */
 #intro {
   text-align: center;
   height: 200px;
@@ -281,18 +281,18 @@ article {
   border-bottom: 1px solid #dad9d7;
   margin-bottom: 40px;
 }
-/* line 151, scss/style.scss */
+/* line 152, scss/style.scss */
 #intro h1 {
   margin-bottom: 20px;
 }
 
-/* line 154, scss/style.scss */
+/* line 155, scss/style.scss */
 .hook {
   position: relative;
   top: -125px;
 }
 
-/* line 160, scss/style.scss */
+/* line 161, scss/style.scss */
 #call4paper {
   border-bottom: 1px solid #dad9d7;
   margin-bottom: 40px;
@@ -302,7 +302,7 @@ article {
   height: 280px;
 }
 
-/* line 170, scss/style.scss */
+/* line 171, scss/style.scss */
 #call4paper-header {
   text-align: right;
   font-size: 30px;
@@ -312,46 +312,46 @@ article {
   width: 49%;
   float: left;
 }
-/* line 178, scss/style.scss */
+/* line 179, scss/style.scss */
 #call4paper-header h1 {
   color: #39302b;
   font-size: 130px;
   text-transform: uppercase;
 }
-/* line 184, scss/style.scss */
+/* line 185, scss/style.scss */
 #call4paper-header h1 span {
   color: #c4c72e;
 }
 
-/* line 194, scss/style.scss */
+/* line 195, scss/style.scss */
 #call4paper-content {
   margin: 40px 0px 0px 2%;
   width: 49%;
   float: left;
 }
 
-/* line 202, scss/style.scss */
+/* line 203, scss/style.scss */
 #conf-description div {
   column-count: 2;
   padding-bottom: 40px;
   border-bottom: 1px solid #dad9d7;
   margin-bottom: 100px;
 }
-/* line 209, scss/style.scss */
+/* line 210, scss/style.scss */
 #conf-description p {
   margin: 0 0 10px 0;
 }
-/* line 213, scss/style.scss */
+/* line 214, scss/style.scss */
 #conf-description header {
   display: none;
 }
 
-/* line 219, scss/style.scss */
+/* line 220, scss/style.scss */
 .event {
   position: relative;
 }
 
-/* line 224, scss/style.scss */
+/* line 225, scss/style.scss */
 .event-content {
   float: right;
   width: 650px;
@@ -360,13 +360,13 @@ article {
   border-left: 3px solid #dad9d7;
 }
 
-/* line 233, scss/style.scss */
+/* line 234, scss/style.scss */
 .event-date {
   color: #c4c72e;
   font-size: 18px;
 }
 
-/* line 239, scss/style.scss */
+/* line 240, scss/style.scss */
 .event-year {
   position: absolute;
   top: 0px;
@@ -378,23 +378,87 @@ article {
   padding: 15px 0px 30px 40px;
 }
 
-/* line 251, scss/style.scss */
+/* line 252, scss/style.scss */
 .event-title {
   margin: 10px 0px 30px 0px;
 }
 
-/* line 255, scss/style.scss */
+/* line 257, scss/style.scss */
+#ws-title {
+  color: #5480a8;
+}
+
+/* line 262, scss/style.scss */
+#ws-logo {
+  margin: 15px 0px;
+}
+
+/* line 267, scss/style.scss */
+#ws-info {
+  margin-top: 20px;
+}
+/* line 271, scss/style.scss */
+#ws-info h3 {
+  font-family: "Yanone Kaffeesatz";
+  font-weight: bold;
+  font-size: 28px;
+  color: #5480a8;
+  text-transform: uppercase;
+}
+
+/* line 281, scss/style.scss */
+#ws-map {
+  border: 5px solid #fff;
+  float: left;
+  margin-right: 25px;
+}
+
+/* line 288, scss/style.scss */
+#ws-speakers {
+  clear: left;
+}
+/* line 292, scss/style.scss */
+#ws-speakers li {
+  padding-top: 25px;
+}
+/* line 297, scss/style.scss */
+#ws-speakers img {
+  float: left;
+}
+/* line 302, scss/style.scss */
+#ws-speakers h3 {
+  font-family: "Yanone Kaffeesatz";
+  font-weight: bold;
+  font-size: 26px;
+  color: #5480a8;
+}
+/* line 309, scss/style.scss */
+#ws-speakers h3 a {
+  color: #a4a4a4;
+}
+/* line 315, scss/style.scss */
+#ws-speakers p {
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+/* line 322, scss/style.scss */
+.ws-speaker-bio {
+  margin-left: 140px;
+}
+
+/* line 326, scss/style.scss */
 #slides img {
   margin: 5px;
   box-sizing: border-box;
 }
 
-/* line 261, scss/style.scss */
+/* line 332, scss/style.scss */
 #slides-pagination {
   text-align: center;
   padding: 30px 0px;
 }
-/* line 265, scss/style.scss */
+/* line 336, scss/style.scss */
 #slides-pagination a {
   display: inline-block;
   text-indent: -999px;
@@ -405,17 +469,17 @@ article {
   height: 10px;
   margin: 0 3px;
 }
-/* line 275, scss/style.scss */
+/* line 346, scss/style.scss */
 #slides-pagination a.selected {
   background-color: #c4c72e;
 }
 
-/* line 283, scss/style.scss */
+/* line 354, scss/style.scss */
 #footer-container {
   background-color: #39302b;
 }
 
-/* line 288, scss/style.scss */
+/* line 359, scss/style.scss */
 #footer {
   width: 830px;
   margin: 0px auto;
@@ -424,25 +488,25 @@ article {
   padding: 50px 0px 140px 0px;
 }
 
-/* line 297, scss/style.scss */
+/* line 368, scss/style.scss */
 #call-for-paper {
   float: right;
   width: 510px;
 }
 
-/* line 303, scss/style.scss */
+/* line 374, scss/style.scss */
 #footer a {
   color: #c4c72e;
   font-size: 20px;
   text-transform: uppercase;
 }
 
-/* line 310, scss/style.scss */
+/* line 381, scss/style.scss */
 #social {
   margin-top: 30px;
 }
 
-/* line 315, scss/style.scss */
+/* line 386, scss/style.scss */
 #social li {
   display: inline-block;
   margin-right: 15px;

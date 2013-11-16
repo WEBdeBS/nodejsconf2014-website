@@ -14,6 +14,7 @@ $white: rgb(255,255,255);
 $lightgreen: rgb(196,199,46);
 $lightgrey: #dad9d7;
 $grey: #efebe8;
+$ws: #5480a8;
 
 $font: 'Yanone Kaffeesatz';
 
@@ -250,6 +251,76 @@ article
 .event-title 
 {
 	margin: 10px 0px 30px 0px;
+}
+
+#ws-title
+{
+	color: $ws;
+}
+
+#ws-logo
+{
+	margin: 15px 0px;
+}
+
+#ws-info
+{
+	margin-top: 20px;
+
+	h3
+	{
+		font-family: $font;
+		font-weight: bold;
+		font-size: 28px;
+		color: $ws;
+		text-transform: uppercase;
+	}
+}
+
+#ws-map
+{
+	border: 5px solid #fff;
+	float: left;
+	margin-right: 25px;
+}
+
+#ws-speakers
+{
+	clear: left;
+
+	li
+	{
+		padding-top: 25px;
+	}
+
+	img
+	{
+		float: left;
+	}
+
+	h3
+	{
+		font-family: $font;
+		font-weight: bold;
+		font-size: 26px;
+		color: $ws;
+
+		a
+		{
+			color: #a4a4a4;
+		}
+	}
+
+	p
+	{
+		font-size: 15px;
+		margin-bottom: 0px;
+	}
+}
+
+.ws-speaker-bio
+{
+	margin-left: 140px;
 }
 
 #slides img{
