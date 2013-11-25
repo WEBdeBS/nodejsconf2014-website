@@ -17,4 +17,10 @@ function get_attachments_by_id($id) {
 
 add_image_size( 'gallery', 500, 375, true );
 
+function nodejsconf_walker_nav_menu_start_el($output) {
+    return str_replace(site_url() . "/", site_url() . "/#", $output);
+}
+
+add_filter("walker_nav_menu_start_el", "nodejsconf_walker_nav_menu_start_el");
+
 ?>
