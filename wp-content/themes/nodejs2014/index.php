@@ -67,17 +67,12 @@
 		</div>
 		<div id="main">
 
-			<article id="intro">
+
+
+			<article id="supportersdiv">
 				<a id="<?php $curpage = array_shift($pages); $curpage = get_post($curpage->object_id); echo $curpage->post_name; ?>" class="hook">sss</a>
 
-				<header>
-					<h1 class="title">
-						<?php  echo $curpage->post_title; ?>
-					</h1>
-				</header>
-				<div>
-					<?php echo apply_filters("the_content", $curpage->post_content); ?>
-				</div>			
+				<?php echo apply_filters("the_content", $curpage->post_content); ?>
 			</article>
 
 			<article id="call4paper">
