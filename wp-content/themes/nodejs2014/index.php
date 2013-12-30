@@ -143,6 +143,34 @@
 								</p>
 							</div>
 						</li>
+						<li>
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/speaker_0000s_0000_bruyen.png" alt="">
+							<div class="ws-speaker-bio">
+								<h3>
+									Mathieu Bruyen -
+									<a href="https://twitter.com/mathbruyen">
+										@mathbruyen	
+									</a>
+								</h3>
+								<p>
+									Java programmer for the living: developer at Amadeus in an agile team building a customization framework for customers to hook in the logic and user interface of e-commerce products. Hooks are uploaded and hot reloaded in the JVM using Groovy. UI is designed using Amadeus’s AriaTemplates open source framework. When it comes to playing at night, web technologies come from darkness. Love to dig deep in internals of what I use and get the maths behind it. A bit of DIY welcome too.
+								</p>
+							</div>
+						</li>
+						<li>
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/speaker_0000s_0001_matrat.png" alt="">
+							<div class="ws-speaker-bio">
+								<h3>
+									Fabrice Matrat -
+									<a href="https://twitter.com/fabricematrat">
+										@fabricematrat	
+									</a>
+								</h3>
+								<p>
+									Fabrice is a Web architect in charge of code quality for a large organization (nickname Mr. Clean Code). With over 15 years of experience in bank, insurance, multimedia and travel industry all over the world, he is now spending his nights coding HTML5 mobile apps. Involved in a couple of open source projects and co-founder of RivieraGUG (Grails and Groovy User Group), you can always discuss with him about asynchronous behaviour, Groovy and JavaScript over a couple of beers.
+								</p>
+							</div>
+						</li>
 					</ul>
 				</div>					
 			</article>
