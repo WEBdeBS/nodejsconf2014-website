@@ -100,10 +100,16 @@ article
 }
 
 #main,
-#header
+#header,
+#supportersdiv
 {
 	width: 940px;
 	margin: 0px auto;
+}
+
+#main
+{
+	padding-top: 40px;
 }
 
 #header-container
@@ -389,7 +395,7 @@ article
 }
 
 #supportersdiv{
-	margin-bottom: 30px;
+	margin-bottom: 100px;
 	h1,h2{
 		text-align: center;
 		text-transform: uppercase;

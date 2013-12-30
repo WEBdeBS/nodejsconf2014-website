@@ -67,41 +67,6 @@
 		</div>
 		<div id="main">
 
-
-
-			<article id="supportersdiv">
-				<a id="<?php $curpage = array_shift($pages); $curpage = get_post($curpage->object_id); echo $curpage->post_name; ?>" class="hook">sss</a>
-
-				<?php echo apply_filters("the_content", $curpage->post_content); ?>
-			</article>
-
-			<article id="call4paper">
-				<a id="<?php $curpage = array_shift($pages); $curpage = get_post($curpage->object_id); echo $curpage->post_name; ?>" class="hook">sss</a>
-
-				<header id="call4paper-header">
-					Closes <?php echo get_post_meta($curpage->ID, 'deadline', true); ?>
-					<h1 class="title">
-						<?php echo str_replace("4", "<span>4</span>", $curpage->post_title); ?>
-					</h1>
-				</header>
-				<div id="call4paper-content">
-					<?php echo apply_filters("the_content", $curpage->post_content); ?>
-				</div>			
-			</article>
-
-			<article id="conf-description">
-				<a id="<?php $curpage = array_shift($pages); $curpage = get_post($curpage->object_id); echo $curpage->post_name; ?>" class="hook">sss</a>
-
-				<header>
-					<h1 class="title">
-						<?php  echo $curpage->post_title; ?>
-					</h1>
-				</header>
-				<div>
-					<?php echo apply_filters("the_content", $curpage->post_content); ?>
-				</div>			
-			</article>
-
 			<?php $curpage = array_shift($pages); ?>
 			<article class="event">
 				<a id="<?php $curpage = get_post($curpage->object_id); echo $curpage->post_name; ?>" class="hook"></a>
@@ -121,6 +86,64 @@
 					<div>
 						<?php echo apply_filters("the_content", $curpage->post_content); ?>
 					</div>
+					<ul id="ws-speakers">
+						<li>
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/speaker__0000s_0000_mantione.png" alt="">
+							<div class="ws-speaker-bio">
+								<h3>
+									Massimiliano Mantione -
+									<a href="https://twitter.com/M_a_s_s_i">
+										@M_a_s_s_i
+									</a>
+								</h3>
+								<p>
+									Massimiliano is a former V8 developer in Google where he worked on new optimisations for the JavaScript engine that is at the very core of NodeJS. He's also a long-time speaker and rumours says he's working on some new kind of language...
+								</p>
+							</div>
+						</li>
+						<li>
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/speaker__0000s_0003_collina.png" alt="">
+							<div class="ws-speaker-bio">
+								<h3>
+									Matteo Collina -
+									<a href="https://twitter.com/matteocollina">
+										@matteocollina
+									</a>
+								</h3>
+								<p>
+									Matteo Collina is a software engineer, a NodeJS developer and a well known speaker who has performed at many national and international events. He's going to share with us a special recipe including NodeJS, LevelDB and other secrets ingredients...
+								</p>
+							</div>
+						</li>
+						<li>
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/speaker__0000s_0001_kezemier.png" alt="">
+							<div class="ws-speaker-bio">
+								<h3>
+									Arnout Kazemier -
+									<a href="https://twitter.com/3rdEden">
+										@3rdEden
+									</a>
+								</h3>
+								<p>
+									Arnout is founder of 3rd-eden.com and observe.it and lead developer at Nodejitsu. He's also a widely recognised open source contributor to projects such as the everyone-has-used-it-at-least-once Socket.io. By the way, did you ever heard about Primus? No? That's a good reason to attend!
+								</p>
+							</div>
+						</li>
+						<li>
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/speaker__0000s_0002_fernandez.png" alt="">
+							<div class="ws-speaker-bio">
+								<h3>
+									Alex Fernández -
+									<a href="https://twitter.com/pinchito">
+										@pinchito	
+									</a>
+								</h3>
+								<p>
+									Alex Fernández is a Spanish software engineer and a former Java developer that wandered into the crazy world of JavaScript and Node.js. Nowadays he delivers thousands of requests per second and builds his own DevOps platform at MediaSmart Mobile. If you're curious about it just grab a ticket!
+								</p>
+							</div>
+						</li>
+					</ul>
 				</div>					
 			</article>
 
@@ -222,8 +245,9 @@
 					</div>
 				</div>					
 			</article>
-			
+
 		</div>
+
 		<div id="slides">
 			<?php 
 				$attachments = get_attachments_by_id($post->ID);
@@ -236,6 +260,12 @@
 			?>
 		</div>
 		<div id="slides-pagination"></div>
+
+		<article id="supportersdiv">
+			<a id="<?php $curpage = array_shift($pages); $curpage = get_post($curpage->object_id); echo $curpage->post_name; ?>" class="hook">sss</a>
+
+			<?php echo apply_filters("the_content", $curpage->post_content); ?>
+		</article>
 
 		<div id="footer-container">
 			<footer id="footer">
