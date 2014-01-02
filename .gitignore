@@ -2,3 +2,4 @@ database.yml
 .sass-cache
 env_*
 .DS_Store
+.idea
