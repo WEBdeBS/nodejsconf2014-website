@@ -15,6 +15,7 @@ $lightgreen: rgb(196,199,46);
 $lightgrey: #dad9d7;
 $grey: #efebe8;
 $ws: #5480a8;
+$darkgrey: #a4a4a4;
 
 $font: 'Yanone Kaffeesatz';
 
@@ -264,6 +265,61 @@ article
 	margin: 10px 0px 30px 0px;
 }
 
+#hotels
+{
+	li
+	{
+		clear: right;
+		margin-bottom: 30px;
+	}
+
+	iframe
+	{
+		border: 5px solid #fff !important;
+	}
+}
+
+.hotel
+{
+	float: right;
+	width: 225px;
+	margin-left: 15px;
+
+	h3
+	{
+		font-family: $font;
+		font-weight: bold;
+		font-size: 28px;
+		color: $lightgreen;
+		text-transform: uppercase;
+
+		span
+		{
+			color: $darkgrey;
+		}
+	}
+
+	h4
+	{
+		font-family: $font;
+		font-weight: bold;
+		font-size: 28px;
+		color: $darkgrey;
+		text-transform: uppercase;
+	}
+
+	p
+	{
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	b
+	{
+		font-weight: bold;
+	}
+}
+
 #ws-title
 {
 	color: $ws;
@@ -321,7 +377,7 @@ article
 
 		a
 		{
-			color: #a4a4a4;
+			color: $darkgrey;
 		}
 	}
 

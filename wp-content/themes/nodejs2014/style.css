@@ -148,7 +148,7 @@ input.LR-share-email-emails[type="email"] {
   max-width: none !important;
 }
 
-/* line 22, scss/style.scss */
+/* line 23, scss/style.scss */
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
@@ -157,41 +157,41 @@ body {
   color: #39302b;
 }
 
-/* line 30, scss/style.scss */
+/* line 31, scss/style.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 35, scss/style.scss */
+/* line 36, scss/style.scss */
 a {
   text-decoration: none;
   color: #39302b;
 }
 
-/* line 40, scss/style.scss */
+/* line 41, scss/style.scss */
 p > a {
   text-decoration: underline;
 }
 
-/* line 44, scss/style.scss */
+/* line 45, scss/style.scss */
 p {
   margin: 10px 0;
   line-height: 1.5em;
 }
 
-/* line 50, scss/style.scss */
+/* line 51, scss/style.scss */
 article {
   overflow: hidden;
 }
 
-/* line 55, scss/style.scss */
+/* line 56, scss/style.scss */
 .mostro-box {
   height: 450px;
   background-color: #39302b;
   position: relative;
 }
 
-/* line 60, scss/style.scss */
+/* line 61, scss/style.scss */
 .thanks-title {
   width: 530px;
   position: absolute;
@@ -204,7 +204,7 @@ article {
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
-/* line 73, scss/style.scss */
+/* line 74, scss/style.scss */
 .main-title {
   pointer-events: none;
   position: absolute;
@@ -219,24 +219,24 @@ article {
   color: white;
   text-shadow: 2px 2px 0 #39302b, 2px -2px 0 #39302b, -2px -2px 0 #39302b, -2px 2px 0 #39302b;
 }
-/* line 90, scss/style.scss */
+/* line 91, scss/style.scss */
 .main-title em {
   color: #c4c72e;
 }
 
-/* line 96, scss/style.scss */
+/* line 97, scss/style.scss */
 .title {
   font-family: "Yanone Kaffeesatz";
   font-weight: bold;
   font-size: 40px;
 }
 
-/* line 103, scss/style.scss */
+/* line 104, scss/style.scss */
 #monsters-canvas {
   outline: none;
 }
 
-/* line 110, scss/style.scss */
+/* line 111, scss/style.scss */
 #main,
 #header,
 #supportersdiv {
@@ -244,47 +244,47 @@ article {
   margin: 0px auto;
 }
 
-/* line 116, scss/style.scss */
+/* line 117, scss/style.scss */
 #main {
   padding-top: 40px;
 }
 
-/* line 121, scss/style.scss */
+/* line 122, scss/style.scss */
 #header-container {
   background-color: white;
   line-height: 130px;
   border-bottom: 1px solid #dad9d7;
 }
 
-/* line 129, scss/style.scss */
+/* line 130, scss/style.scss */
 #navigation {
   float: right;
 }
 
-/* line 133, scss/style.scss */
+/* line 134, scss/style.scss */
 #menu li:nth-child(n+2):before {
   content: " / ";
   padding: 0px 10px;
 }
 
-/* line 139, scss/style.scss */
+/* line 140, scss/style.scss */
 #menu li {
   display: inline;
 }
 
-/* line 144, scss/style.scss */
+/* line 145, scss/style.scss */
 #menu a {
   text-transform: uppercase;
   font-size: 14px;
   color: #39302b;
 }
 
-/* line 151, scss/style.scss */
+/* line 152, scss/style.scss */
 #logo {
   vertical-align: middle;
 }
 
-/* line 156, scss/style.scss */
+/* line 157, scss/style.scss */
 #intro {
   text-align: center;
   height: 200px;
@@ -292,18 +292,18 @@ article {
   border-bottom: 1px solid #dad9d7;
   margin-bottom: 40px;
 }
-/* line 163, scss/style.scss */
+/* line 164, scss/style.scss */
 #intro h1 {
   margin-bottom: 20px;
 }
 
-/* line 166, scss/style.scss */
+/* line 167, scss/style.scss */
 .hook {
   position: relative;
   top: -125px;
 }
 
-/* line 172, scss/style.scss */
+/* line 173, scss/style.scss */
 #call4paper {
   border-bottom: 1px solid #dad9d7;
   margin-bottom: 40px;
@@ -313,7 +313,7 @@ article {
   height: 360px;
 }
 
-/* line 182, scss/style.scss */
+/* line 183, scss/style.scss */
 #call4paper-header {
   text-align: right;
   font-size: 30px;
@@ -323,46 +323,46 @@ article {
   width: 49%;
   float: left;
 }
-/* line 190, scss/style.scss */
+/* line 191, scss/style.scss */
 #call4paper-header h1 {
   color: #39302b;
   font-size: 130px;
   text-transform: uppercase;
 }
-/* line 196, scss/style.scss */
+/* line 197, scss/style.scss */
 #call4paper-header h1 span {
   color: #c4c72e;
 }
 
-/* line 206, scss/style.scss */
+/* line 207, scss/style.scss */
 #call4paper-content {
   margin: 40px 0px 0px 2%;
   width: 49%;
   float: left;
 }
 
-/* line 214, scss/style.scss */
+/* line 215, scss/style.scss */
 #conf-description div {
   column-count: 2;
   padding-bottom: 40px;
   border-bottom: 1px solid #dad9d7;
   margin-bottom: 100px;
 }
-/* line 221, scss/style.scss */
+/* line 222, scss/style.scss */
 #conf-description p {
   margin: 0 0 10px 0;
 }
-/* line 225, scss/style.scss */
+/* line 226, scss/style.scss */
 #conf-description header {
   display: none;
 }
 
-/* line 231, scss/style.scss */
+/* line 232, scss/style.scss */
 .event {
   position: relative;
 }
 
-/* line 236, scss/style.scss */
+/* line 237, scss/style.scss */
 .event-content {
   float: right;
   width: 650px;
@@ -371,13 +371,13 @@ article {
   border-left: 3px solid #dad9d7;
 }
 
-/* line 245, scss/style.scss */
+/* line 246, scss/style.scss */
 .event-date {
   color: #c4c72e;
   font-size: 18px;
 }
 
-/* line 251, scss/style.scss */
+/* line 252, scss/style.scss */
 .event-year {
   position: absolute;
   top: 0px;
@@ -389,26 +389,72 @@ article {
   padding: 15px 0px 30px 40px;
 }
 
-/* line 263, scss/style.scss */
+/* line 264, scss/style.scss */
 .event-title {
   margin: 10px 0px 30px 0px;
 }
 
-/* line 268, scss/style.scss */
+/* line 271, scss/style.scss */
+#hotels li {
+  clear: right;
+  margin-bottom: 30px;
+}
+/* line 277, scss/style.scss */
+#hotels iframe {
+  border: 5px solid #fff !important;
+}
+
+/* line 283, scss/style.scss */
+.hotel {
+  float: right;
+  width: 225px;
+  margin-left: 15px;
+}
+/* line 289, scss/style.scss */
+.hotel h3 {
+  font-family: "Yanone Kaffeesatz";
+  font-weight: bold;
+  font-size: 28px;
+  color: #c4c72e;
+  text-transform: uppercase;
+}
+/* line 297, scss/style.scss */
+.hotel h3 span {
+  color: #a4a4a4;
+}
+/* line 303, scss/style.scss */
+.hotel h4 {
+  font-family: "Yanone Kaffeesatz";
+  font-weight: bold;
+  font-size: 28px;
+  color: #a4a4a4;
+  text-transform: uppercase;
+}
+/* line 312, scss/style.scss */
+.hotel p {
+  font-size: 14px;
+  line-height: 16px;
+}
+/* line 318, scss/style.scss */
+.hotel b {
+  font-weight: bold;
+}
+
+/* line 324, scss/style.scss */
 #ws-title {
   color: #5480a8;
 }
 
-/* line 273, scss/style.scss */
+/* line 329, scss/style.scss */
 #ws-logo {
   margin: 15px 0px;
 }
 
-/* line 278, scss/style.scss */
+/* line 334, scss/style.scss */
 #ws-info {
   margin-top: 20px;
 }
-/* line 282, scss/style.scss */
+/* line 338, scss/style.scss */
 #ws-info h3 {
   font-family: "Yanone Kaffeesatz";
   font-weight: bold;
@@ -417,69 +463,69 @@ article {
   text-transform: uppercase;
 }
 
-/* line 292, scss/style.scss */
+/* line 348, scss/style.scss */
 #ws-map {
   border: 5px solid #fff;
   float: left;
   margin-right: 25px;
 }
 
-/* line 299, scss/style.scss */
+/* line 355, scss/style.scss */
 #ws-speakers {
   clear: left;
   margin-bottom: 50px;
 }
-/* line 304, scss/style.scss */
+/* line 360, scss/style.scss */
 #ws-speakers li {
   padding-top: 25px;
 }
-/* line 309, scss/style.scss */
+/* line 365, scss/style.scss */
 #ws-speakers img {
   float: left;
   clear: left;
   margin-top: 10px;
 }
-/* line 316, scss/style.scss */
+/* line 372, scss/style.scss */
 #ws-speakers h3 {
   font-family: "Yanone Kaffeesatz";
   font-weight: bold;
   font-size: 26px;
   color: #5480a8;
 }
-/* line 323, scss/style.scss */
+/* line 379, scss/style.scss */
 #ws-speakers h3 a {
   color: #a4a4a4;
 }
-/* line 328, scss/style.scss */
+/* line 384, scss/style.scss */
 #ws-speakers h4 {
   font-weight: bold;
   font-size: 18px;
   color: #39302b;
   margin-top: 10px;
 }
-/* line 336, scss/style.scss */
+/* line 392, scss/style.scss */
 #ws-speakers p {
   font-size: 15px;
   margin-bottom: 0px;
 }
 
-/* line 343, scss/style.scss */
+/* line 399, scss/style.scss */
 .ws-speaker-bio {
   margin-left: 140px;
 }
 
-/* line 347, scss/style.scss */
+/* line 403, scss/style.scss */
 #slides img {
   margin: 5px;
   box-sizing: border-box;
 }
 
-/* line 353, scss/style.scss */
+/* line 409, scss/style.scss */
 #slides-pagination {
   text-align: center;
   padding: 30px 0px;
 }
-/* line 357, scss/style.scss */
+/* line 413, scss/style.scss */
 #slides-pagination a {
   display: inline-block;
   text-indent: -999px;
@@ -490,17 +536,17 @@ article {
   height: 10px;
   margin: 0 3px;
 }
-/* line 367, scss/style.scss */
+/* line 423, scss/style.scss */
 #slides-pagination a.selected {
   background-color: #c4c72e;
 }
 
-/* line 375, scss/style.scss */
+/* line 431, scss/style.scss */
 #footer-container {
   background-color: #39302b;
 }
 
-/* line 380, scss/style.scss */
+/* line 436, scss/style.scss */
 #footer {
   width: 830px;
   margin: 0px auto;
@@ -509,35 +555,35 @@ article {
   padding: 50px 0px 140px 0px;
 }
 
-/* line 389, scss/style.scss */
+/* line 445, scss/style.scss */
 #call-for-paper {
   float: right;
   width: 510px;
 }
 
-/* line 395, scss/style.scss */
+/* line 451, scss/style.scss */
 #footer a {
   color: #c4c72e;
   font-size: 20px;
   text-transform: uppercase;
 }
 
-/* line 402, scss/style.scss */
+/* line 458, scss/style.scss */
 #social {
   margin-top: 30px;
 }
 
-/* line 407, scss/style.scss */
+/* line 463, scss/style.scss */
 #social li {
   display: inline-block;
   margin-right: 15px;
 }
 
-/* line 412, scss/style.scss */
+/* line 468, scss/style.scss */
 #supportersdiv {
   margin-bottom: 100px;
 }
-/* line 414, scss/style.scss */
+/* line 470, scss/style.scss */
 #supportersdiv h1, #supportersdiv h2 {
   text-align: center;
   text-transform: uppercase;
@@ -548,31 +594,31 @@ article {
   font-size: 40px;
   color: #c4c72e;
 }
-/* line 424, scss/style.scss */
+/* line 480, scss/style.scss */
 #supportersdiv h2 {
   color: #9a9997;
 }
-/* line 427, scss/style.scss */
+/* line 483, scss/style.scss */
 #supportersdiv .supporters {
   text-align: center;
   max-width: 960px;
   border-bottom: 1px solid #dad9d7;
   padding-bottom: 20px;
 }
-/* line 433, scss/style.scss */
+/* line 489, scss/style.scss */
 #supportersdiv .supporters p, #supportersdiv .supporters img, #supportersdiv .supporters a {
   display: inline-block;
 }
-/* line 434, scss/style.scss */
+/* line 490, scss/style.scss */
 #supportersdiv .supporters img {
   padding: 0 20px;
 }
-/* line 435, scss/style.scss */
+/* line 491, scss/style.scss */
 #supportersdiv .supporters br {
   display: none;
 }
 
-/* line 439, scss/style.scss */
+/* line 495, scss/style.scss */
 .eventbrite {
   width: 530px !important;
   position: absolute;
