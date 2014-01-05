@@ -25,6 +25,7 @@
 		<!-- modernizr -->
 		<script src="<?php echo get_stylesheet_directory_uri() ?>/vendor/modernizr.js"></script>
 		<script src="<?php echo get_stylesheet_directory_uri() ?>/vendor/prefixfree.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
 		<?php wp_head(); ?>
 	</head>
@@ -37,13 +38,9 @@
 				<?php echo preg_replace("/_([^_]+)_/","<em>\$1</em>",get_bloginfo('description')); ?>
 			</h1>
 
-			<!-- thanks! -->
-			<p style="display:none;" class="thanks-title">Thanks! Check your inbox for a welcome message.</p>
-
-			<!-- Begin LaunchRock Widget -->
-			<div id="lr-widget" rel="MTBE93HI"></div>
-			<script type="text/javascript" src="//ignition.launchrock.com/ignition-current.min.js"></script>
-			<!-- End LaunchRock Widget -->
+			<div class="eventbrite">
+				<a href="https://www.eventbrite.it/e/biglietti-nodejs-conf-it-2014-9509179211?ref=ebtnebtckt" target="_blank"><img src="http://www.eventbrite.com/custombutton?eid=9509179211" alt="Eventbrite - NodeJS Conf It 2014" /></a>
+			</div>
 
 			<!-- mostri -->
 			<canvas id="monsters-canvas" data-processing-sources="<?php echo get_stylesheet_directory_uri() ?>/pde/monsters.pde"></canvas>
@@ -86,32 +83,82 @@
 					<div>
 						<?php echo apply_filters("the_content", $curpage->post_content); ?>
 					</div>
+					<div class="event-title title">
+						The Agenda!
+					</div>
 					<ul id="ws-speakers">
+						<li>
+							<div class="ws-speaker-bio">
+								<h3>08:30 - 09:00: Registration</h3>
+							</div>
+						</li>
+						<li>
+							<div class="ws-speaker-bio">
+								<h3>09:00 - 09:20: Welcome!</h3>
+							</div>
+						</li>						
+						<li>
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/speaker__0000s_0002_fernandez.png" alt="">
+							<div class="ws-speaker-bio">
+								<h3>
+									9:30 - 10:10: Alex Fernández -
+									<a href="https://twitter.com/pinchito">
+										@pinchito	
+									</a>
+								</h3>
+								<h4>Scalability Lessons: Beyond 10K Requests per Second</h4>
+								<p>
+									For a startup with limited resources, scaling beyond 10K requests per second presents some unique technical challenges. In this talk I review some of the issues that we have faced while scaling our platform to five countries, tens of servers, and several MM requests per month.
+								</p>
+							</div>
+						</li>					
 						<li>
 							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/speaker__0000s_0000_mantione.png" alt="">
 							<div class="ws-speaker-bio">
 								<h3>
-									Massimiliano Mantione -
+									10:20 - 11:00: Massimiliano Mantione -
 									<a href="https://twitter.com/M_a_s_s_i">
 										@M_a_s_s_i
 									</a>
 								</h3>
+								<h4>Metascript: going beyond Javascript limitations</h4>
 								<p>
-									Massimiliano is a former V8 developer in Google where he worked on new optimisations for the JavaScript engine that is at the very core of NodeJS. He's also a long-time speaker and rumours says he's working on some new kind of language...
+									We all know that Javascript is not a perfect programming language, and several projects (Cofeescript, Typescript and many others) are addressing this problem.
+									Each of them tries to solve one particular issue, and the problem I have with them is that I want all of them, plus a real metaprogramming framework (that almost none of them offers).
+									Metascript is a new programming language that compiles to Javascript and tries to solve exactly these problems.
+									In the talk I will give an overview of the language and show how metaprogramming can be used to provide solutions to issues like the nesting of functions in CPS code, clean "class" constructor definitions, dependency injection and others.
 								</p>
 							</div>
 						</li>
 						<li>
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/speaker__0000s_0003_collina.png" alt="">
+							<div class="ws-speaker-bio">
+								<h3>11:00 - 11:30: Coffee Break</h3>
+							</div>
+						</li>						
+						<li>
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/speaker_0000s_0000_bruyen.png" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/speaker_0000s_0001_matrat.png" alt="">
 							<div class="ws-speaker-bio">
 								<h3>
-									Matteo Collina -
-									<a href="https://twitter.com/matteocollina">
-										@matteocollina
-									</a>
+									11:30 - 12:10: Mathieu Bruyen and Fabrice Matrat -
+									<a href="https://twitter.com/mathbruyen">
+										@mathbruyen	
+									</a> <a>and</a>
+									<a href="https://twitter.com/fabricematrat">
+										@fabricematrat	
+									</a>									
 								</h3>
+								<h4>
+									World in conflict: my app is online!
+								</h4>
 								<p>
-									Matteo Collina is a software engineer, a NodeJS developer and a well known speaker who has performed at many national and international events. He's going to share with us a special recipe including NodeJS, LevelDB and other secrets ingredients...
+									You want your mobile JavaScript application to perfectly run as the user gets lost in the middle of the jungle. 
+									How to use HTML5 offline capabilities in order for the application to locally progress?
+									And then what happens when the user gets back to civilization? 
+									Local modifications have to be sent to the backend and external changes must be visible. 
+									How to synchronize server and client stores?
+									In this session we will cover offline applications, algorithmic approach to synchronization, conflict issues and merge solutions.
+									<br/><br/>
 								</p>
 							</div>
 						</li>
@@ -119,72 +166,112 @@
 							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/speaker__0000s_0001_kezemier.png" alt="">
 							<div class="ws-speaker-bio">
 								<h3>
-									Arnout Kazemier -
+									12:20 - 13:00: Arnout Kazemier -
 									<a href="https://twitter.com/3rdEden">
 										@3rdEden
 									</a>
 								</h3>
+								<h4>
+									Transforming real-time with Primus
+								</h4>
 								<p>
-									Arnout is founder of 3rd-eden.com and observe.it and lead developer at Nodejitsu. He's also a widely recognised open source contributor to projects such as the everyone-has-used-it-at-least-once Socket.io. By the way, did you ever heard about Primus? No? That's a good reason to attend!
+									Primus is here to transform the way we build our real-time applications. Ever had to rewrite your app because the framework you used died, failed in production or your boss wanted to add feature Y? Primus solves that, it can transparently switch between SockJS, Engine.IO, SockJS and even pure WebSockets. With 1 Line Of Code.
+									I've been core contributor to Socket.IO for a couple of years, co-maintainer of the populair `ws` library and now the creative mind behind. I've been at the front-line when it comes to real-time adoption and development and know how horrible it is to rewrite your application because the Open Source framework you're using was only designed for small projects instead of large scale production. Let me take you on journey where you'll learn about the problems of building a real-time application and how Primus solves these for you.
 								</p>
 							</div>
 						</li>
 						<li>
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/speaker__0000s_0002_fernandez.png" alt="">
+							<div class="ws-speaker-bio">
+								<h3>13:00 - 14:10: Lunch</h3>
+							</div>
+						</li>																	
+						<li>
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/speaker__0000s_0003_collina.png" alt="">
 							<div class="ws-speaker-bio">
 								<h3>
-									Alex Fernández -
-									<a href="https://twitter.com/pinchito">
-										@pinchito	
+									14:10 - 14:50: Matteo Collina -
+									<a href="https://twitter.com/matteocollina">
+										@matteocollina
 									</a>
 								</h3>
+								<h4>
+									How to cook a Graph database in a Night
+								</h4>
 								<p>
-									Alex Fernández is a Spanish software engineer and a former Java developer that wandered into the crazy world of JavaScript and Node.js. Nowadays he delivers thousands of requests per second and builds his own DevOps platform at MediaSmart Mobile. If you're curious about it just grab a ticket!
+									Open Source is truly amazing. New packages are published every day, but I fell in love with LevelDB and LevelUp. LevelDB is an embeddable Key-Value store built by the Google’s engineers that built BigTable. LevelUp is the simplest API for reading such a database. Then, I decided to build a Graph database on top of them, LevelGraph.
 								</p>
 							</div>
 						</li>
 						<li>
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/speaker_0000s_0000_bruyen.png" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/MikeMcNeil.png" alt="">
 							<div class="ws-speaker-bio">
 								<h3>
-									Mathieu Bruyen -
-									<a href="https://twitter.com/mathbruyen">
-										@mathbruyen	
+									15:00 - 15:40: Mike McNeil -
+									<a href="https://twitter.com/mikermcneil">
+										@mikermcneil
 									</a>
 								</h3>
+								<h4>
+									Intro to Sails.js
+								</h4>
 								<p>
-									Java programmer for the living: developer at Amadeus in an agile team building a customization framework for customers to hook in the logic and user interface of e-commerce products. Hooks are uploaded and hot reloaded in the JVM using Groovy. UI is designed using Amadeus’s AriaTemplates open source framework. When it comes to playing at night, web technologies come from darkness. Love to dig deep in internals of what I use and get the maths behind it. A bit of DIY welcome too.
+									In this talk, I give a brief introduction to Sails.js, a realtime, server-side MVC framework for Node.js. I’ll point out some of the problems that Node.js developers face when trying to build apps from scratch, and show how Sails helps solve them. I’ll also live-code examples of some tasks that are simplified by Sails.js. 
+									Sails is an open-source framework built on top of Express, Socket.io, and other industry-standard node modules.  It is designed to resemble the MVC architecture from frameworks like Ruby on Rails, but with support for the more modern, data-oriented style of web app development. It’s aim is to make Node.js practical for production applications, by providing a familiar structure for an app’s back-end while remaining unopinionated about the front-end as well as database-agnostic. It’s especially good for creating realtime features,  such as chat.
 								</p>
 							</div>
 						</li>
 						<li>
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/speaker_0000s_0001_matrat.png" alt="">
+							<div class="ws-speaker-bio">
+								<h3>15:40 - 16:10: Coffee Break</h3>
+							</div>
+						</li>						
+						<li>
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/ForbesLindesay.png" alt="">
 							<div class="ws-speaker-bio">
 								<h3>
-									Fabrice Matrat -
-									<a href="https://twitter.com/fabricematrat">
-										@fabricematrat	
+									16:10 - 16:50: Forbes Lindesay -
+									<a href="https://twitter.com/ForbesLindesay">
+										@ForbesLindesay
 									</a>
 								</h3>
+								<h4>
+									Patterns of Promise Use
+								</h4>
 								<p>
-									Fabrice is a Web architect in charge of code quality for a large organization (nickname Mr. Clean Code). With over 15 years of experience in bank, insurance, multimedia and travel industry all over the world, he is now spending his nights coding HTML5 mobile apps. Involved in a couple of open source projects and co-founder of RivieraGUG (Grails and Groovy User Group), you can always discuss with him about asynchronous behaviour, Groovy and JavaScript over a couple of beers.
+									So you've looked at making the switch from callbacks to promises, Maybe you've dipped your toe in the water and tried promises in a few places but you keep finding places where you've built the callback solution before and you're not quite sure how to do it with promises.
+									This talk will cover many different patterns for using promises to solve simple application problems.  It will give you the why, not just the how, so you can extend these principles to develop patterns of your own.
+								</p>
+							</div>
+						</li>											
+						<li>
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/MatteoBrunati.png" alt="">
+							<div class="ws-speaker-bio">
+								<h3>
+									17:00 - 17:40: Matteo Brunati
+									</a>
+								</h3>
+								<h4>
+									NodeJS Enterprise Apps - A Project Manager PoV
+								</h4>
+								<p>
+The talk would like to be an overview of the use of NodeJS framework in CyBrain, since we chose it as our main framework to build Enterprise oriented applications.
+We would like to share with the crowd these aspects of the everyday work with NodeJS based on our experience:<br/>
+Why we chose NodeJS for our applications,<br/>
+How to deal with the bad acceptance of (most of the time) unkown new technologies in the Enterprise - like NodeJS, MongoDB, ecc.<br/>
+How to organize a NodeJS enterprise app: scalability, frameworks, DBs, testing,<br/>
+How to organise apps, both server side only and web apps,<br/>
+Concurrency and/vs Parallelism with NodeJS,<br/>
+Pseudo real-time and/vs CPU intensive work: JS and C/C++, some real-world examples,<br/>
+How to integrate in the NodeJS team people without NodeJS know how - i.e. JS programming skills, asynchronous programming skills, etc.<br/>
+Developement tools: IDE, workflow tools, VCS, Continuous Integration, programming languages
 								</p>
 							</div>
 						</li>
 						<li>
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/speaker_0000s_0005_mcneil.png" alt="">
 							<div class="ws-speaker-bio">
-								<h3>
-									Mike McNeil -
-									<a href="https://twitter.com/fabricematrat">
-										@mikermcneil	
-									</a>
-								</h3>
-								<p>
-									Mike McNeil is the creator of Sails.js, a Node.js MVC framework that got kind of popular I guess. Every day I get to innovate on cool user experiences and solve tough Node.js technical problems for our clients. At night, I parade around like some open-source starship commander leading the JavaScript diaspora.
-								</p>
+								<h3>17:40 - 18:00: Thanks and Goodbye!</h3>
 							</div>
-						</li>
+						</li>						
 					</ul>
 					<div class="event-title title">
 						Buy your tickets!
