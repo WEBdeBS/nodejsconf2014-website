@@ -41,6 +41,11 @@ p > a{
 	text-decoration: underline;
 }
 
+p {
+	margin: 10px 0;
+	line-height: 1.5em;
+}
+
 article
 {
 	overflow: hidden;
@@ -293,6 +298,7 @@ article
 #ws-speakers
 {
 	clear: left;
+	margin-bottom: 50px;
 
 	li
 	{
@@ -302,6 +308,8 @@ article
 	img
 	{
 		float: left;
+		clear: left;
+		margin-top: 10px;
 	}
 
 	h3
@@ -315,6 +323,13 @@ article
 		{
 			color: #a4a4a4;
 		}
+	}
+
+	h4{
+		font-weight: bold;
+		font-size: 18px;
+		color: $darkbrown;
+		margin-top: 10px;
 	}
 
 	p
@@ -419,4 +434,13 @@ article
 		img{ padding: 0 20px;}
 		br{ display: none;}
 	}
+}
+
+.eventbrite{
+	width: 530px !important;
+	position: absolute;
+	top: 230px;
+	left: 50%;
+	margin-left: -250px;
+	text-align: center;
 }
