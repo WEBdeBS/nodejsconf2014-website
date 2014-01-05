@@ -171,11 +171,83 @@
 								</p>
 							</div>
 						</li>
+						<li>
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/speaker_0000s_0005_mcneil.png" alt="">
+							<div class="ws-speaker-bio">
+								<h3>
+									Mike McNeil -
+									<a href="https://twitter.com/fabricematrat">
+										@mikermcneil	
+									</a>
+								</h3>
+								<p>
+									Mike McNeil is the creator of Sails.js, a Node.js MVC framework that got kind of popular I guess. Every day I get to innovate on cool user experiences and solve tough Node.js technical problems for our clients. At night, I parade around like some open-source starship commander leading the JavaScript diaspora.
+								</p>
+							</div>
+						</li>
 					</ul>
 					<div class="event-title title">
 						Buy your tickets!
 					</div>
 					<div style="width:100%; text-align:left;" ><iframe  src="http://www.eventbrite.it/tickets-external?eid=9509179211&ref=etckt&v=2" frameborder="0" height="261" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it/r/etckt">Registrazione dell'evento online</a><span style="color:#ddd;"> per </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://nodejsconfit2014.eventbrite.it/?ref=etckt">NodeJS Conf It 2014</a> <span style="color:#ddd;">con tecnologia</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it?ref=etckt">Eventbrite</a></div></div>
+					<div class="event-title title">
+						Hotel agreements
+					</div>
+					<ul id="hotels">
+						<li>
+							<div class="hotel">
+								<h3>
+									Hotel Cristallo <span>***</span>
+								</h3>
+								<p>
+									Viale della Stazione, 12A<br>
+									25122 Brescia<br>
+									Italy
+								</p>
+								<h4>
+									Conventions
+								</h4>
+								<p>
+									The hotel will apply following prices for NodeJS Conf convention:<br>
+									<b>single</b> room € 50,00<br>
+									<b>double</b> room € 70,00<br>
+									<b>triple</b> room € 90,00
+								</p>
+								<h4>
+									Contacts
+								</h4>
+								<p>
+									you can book your room <a href="http://www.hotelcristallobrescia.com/eng/prenotazione-eng.htm">here</a>
+								</p>
+							</div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x4781766e48433fe1%3A0x9e10fa0c8bf9049b!2sHotel+Cristallo%2C+brescia!5e0!3m2!1sen!2s!4v1388743036693" width="400" height="300" frameborder="0" style="border:0"></iframe>
+						</li>
+						<li>
+							<div class="hotel">
+								<h3>
+									NH Hotel Brescia <span>****</span>
+								</h3>
+								<p>
+									Viale della Stazione, 15<br>
+									25122 Brescia<br>
+									Italy
+								</p>
+								<h4>
+									Conventions
+								</h4>
+								<p>
+									Thanks to the NodeJS Confconvention, the hotel will apply a <b>discount of 15% on room rates</b>.
+								</p>
+								<h4>
+									Contacts
+								</h4>
+								<p>
+									you can book your room <a href="http://www.nh-hotels.com/nh/en/hotels/italy/brescia/nh-brescia.html?nhagentid=11009&nhsubagentid=110095220109&utm_source=google&utm_medium=maps&utm_campaign=googleplaces">here</a>
+								</p>
+							</div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1397.4169030051944!2d10.213322190063904!3d45.53354985324733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x676a661f9f3c492d!2sNh+Brescia+Hotel!5e0!3m2!1sen!2s!4v1388743083684" width="400" height="300" frameborder="0" style="border:0"></iframe>
+						</li>
+					</li>
 				</div>					
 			</article>
 
