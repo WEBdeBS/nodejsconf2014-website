@@ -28,6 +28,27 @@
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
 		<?php wp_head(); ?>
+
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-46921107-1']);
+		  _gaq.push(['_setDomainName', 'nodejsconf.it']);
+		  _gaq.push(['_setAllowLinker', true]);
+		  _gaq.push(['_trackPageview']);
+		  _gaq.push(function() {
+		    var pageTracker = _gat._getTrackerByName();
+		    var iframe = document.getElementById('myIFrame');
+		    iframe.src = pageTracker._getLinkerUrl('http://www.eventbrite.it/');
+		  });
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>		
 	</head>
 	<body>
 
@@ -39,7 +60,8 @@
 			</h1>
 
 			<div class="eventbrite">
-				<a href="https://www.eventbrite.it/e/biglietti-nodejs-conf-it-2014-9509179211?ref=ebtnebtckt" target="_blank"><img src="http://www.eventbrite.com/custombutton?eid=9509179211" alt="Eventbrite - NodeJS Conf It 2014" /></a>
+				<a href="https://www.eventbrite.it/e/biglietti-nodejs-conf-it-2014-9509179211?ref=ebtnebtckt" target="_blank" onclick="_gaq.push(['_trackEvent', 'Click Out', 'Eventbrite']);_gaq.push(['_link', 'https://www.eventbrite.it/e/biglietti-nodejs-conf-it-2014-9509179211?ref=ebtnebtckt']); return false;
+"><img src="http://www.eventbrite.com/custombutton?eid=9509179211" alt="Eventbrite - NodeJS Conf It 2014"></a>
 			</div>
 
 			<!-- mostri -->
@@ -295,7 +317,7 @@ If you want to learn what else has RabbitMQ to offer beyond simple messaging and
 					<div class="event-title title">
 						Buy your tickets!
 					</div>
-					<div style="width:100%; text-align:left;" ><iframe  src="http://www.eventbrite.it/tickets-external?eid=9509179211&ref=etckt&v=2" frameborder="0" height="261" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it/r/etckt">Registrazione dell'evento online</a><span style="color:#ddd;"> per </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://nodejsconfit2014.eventbrite.it/?ref=etckt">NodeJS Conf It 2014</a> <span style="color:#ddd;">con tecnologia</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it?ref=etckt">Eventbrite</a></div></div>
+					<div style="width:100%; text-align:left;" ><iframe id="myIFrame" src="http://www.eventbrite.it/tickets-external?eid=9509179211&ref=etckt&v=2" frameborder="0" height="261" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it/r/etckt">Registrazione dell'evento online</a><span style="color:#ddd;"> per </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://nodejsconfit2014.eventbrite.it/?ref=etckt">NodeJS Conf It 2014</a> <span style="color:#ddd;">con tecnologia</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it?ref=etckt">Eventbrite</a></div></div>
 					<div class="event-title title">
 						Hotel agreements
 					</div>
