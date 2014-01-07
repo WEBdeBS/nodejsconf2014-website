@@ -276,13 +276,14 @@ Developement tools: IDE, workflow tools, VCS, Continuous Integration, programmin
 									</a>	
 								</h3>
 								<h4>
-									Cloud Messaging with Node.js and RabbitMQ
+									Building a Distributed Data Ingestion System with RabbitMQ
 								</h4>
 								<p>
-In this talk I'd like to present CloudStagram an Instagram clone prototype that has been built with "real time" features from the get go. New uploaded images are broadcasted for background processing using RabbitMQ from the node.js frontend to the Clojure backend. From there real time updates are pushed back to the node.js servers and then to the browser via sock.js. All this implemented in such a fashion that allows horizontal scalability of both the frontend app and the workers app with the requirement of deploying the app to a public Cloud.
-
-You will learn about the advantages of a message oriented architecture to be able to mash up together a polyglot system of apps and services.
-								</p>
+Your company has servers distributed around the world and you need to process data in a centralised location. The data is produced by applications using different technology stacks and comes from various sources, from web servers to sensors. How could you solve this problem? Enter RabbitMQ.
+In this talk we are going to show how to build a system that can ingest data produced at separate geo located areas (think AWS and it's many regions) and replicate it to a central cluster where it can be further processed and analysed.
+We will present an example of how to build a system like this one by using RabbitMQ Federation to replicate data across AWS Regions and RabbitMQ support for many protocols to produce/consume data.
+To help with scalability we are going to show an interesting way to implement sharded queues with RabbitMQ by using the Consistent Hash Exchange.
+If you want to learn what else has RabbitMQ to offer beyond simple messaging and queueing, then this is the talk for you.								</p>
 							</div>
 						</li>						
 						<li>
