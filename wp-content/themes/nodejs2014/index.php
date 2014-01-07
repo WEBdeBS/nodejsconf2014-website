@@ -248,7 +248,6 @@
 							<div class="ws-speaker-bio">
 								<h3>
 									17:00 - 17:40: Matteo Brunati
-									</a>
 								</h3>
 								<h4>
 									NodeJS Enterprise Apps - A Project Manager PoV
@@ -268,8 +267,27 @@ Developement tools: IDE, workflow tools, VCS, Continuous Integration, programmin
 							</div>
 						</li>
 						<li>
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/alvaro_videla.png" alt="">
 							<div class="ws-speaker-bio">
-								<h3>17:40 - 18:00: Thanks and Goodbye!</h3>
+								<h3>
+									17:50 - 18:30: Alvaro Videla - 
+									<a href="https://twitter.com/old_sound">
+										@old_sound
+									</a>	
+								</h3>
+								<h4>
+									Cloud Messaging with Node.js and RabbitMQ
+								</h4>
+								<p>
+In this talk I'd like to present CloudStagram an Instagram clone prototype that has been built with "real time" features from the get go. New uploaded images are broadcasted for background processing using RabbitMQ from the node.js frontend to the Clojure backend. From there real time updates are pushed back to the node.js servers and then to the browser via sock.js. All this implemented in such a fashion that allows horizontal scalability of both the frontend app and the workers app with the requirement of deploying the app to a public Cloud.
+
+You will learn about the advantages of a message oriented architecture to be able to mash up together a polyglot system of apps and services.
+								</p>
+							</div>
+						</li>						
+						<li>
+							<div class="ws-speaker-bio">
+								<h3>18:30 - 18:45: Thanks and Goodbye!</h3>
 							</div>
 						</li>						
 					</ul>
