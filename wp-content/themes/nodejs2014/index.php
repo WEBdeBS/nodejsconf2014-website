@@ -39,7 +39,7 @@
 		  _gaq.push(function() {
 		    var pageTracker = _gat._getTrackerByName();
 		    var iframe = document.getElementById('myIFrame');
-		    iframe.src = pageTracker._getLinkerUrl('http://www.eventbrite.it/');
+		    iframe.src = pageTracker._getLinkerUrl('http://www.eventbrite.it/tickets-external?eid=9509179211&ref=etckt&v=2');
 		  });
 
 		  (function() {
