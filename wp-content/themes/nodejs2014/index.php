@@ -370,7 +370,7 @@ If you want to learn what else has RabbitMQ to offer beyond simple messaging and
 									Contacts
 								</h4>
 								<p>
-									you can book your room <a href="http://www.nh-hotels.com/nh/en/hotels/italy/brescia/nh-brescia.html?nhagentid=11009&nhsubagentid=110095220109&utm_source=google&utm_medium=maps&utm_campaign=googleplaces">here</a>
+									you can book your room by calling +3903044221 asking to get the agreed special price
 								</p>
 							</div>
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1397.4169030051944!2d10.213322190063904!3d45.53354985324733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x676a661f9f3c492d!2sNh+Brescia+Hotel!5e0!3m2!1sen!2s!4v1388743083684" width="400" height="300" frameborder="0" style="border:0"></iframe>
