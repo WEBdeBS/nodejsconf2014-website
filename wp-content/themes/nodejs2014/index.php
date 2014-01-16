@@ -375,8 +375,25 @@ If you want to learn what else has RabbitMQ to offer beyond simple messaging and
 							</div>
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1397.4169030051944!2d10.213322190063904!3d45.53354985324733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x676a661f9f3c492d!2sNh+Brescia+Hotel!5e0!3m2!1sen!2s!4v1388743083684" width="400" height="300" frameborder="0" style="border:0"></iframe>
 						</li>
-					</li>
-				</div>					
+					</ul>
+					<div class="event-title title">
+						The venue
+					</div>	
+					<div id="venue-pictures">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/img/venue_1.jpg" alt="">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/img/venue_2.jpg" alt="">
+					</div>
+					<p id="venue">
+						Centro Pastorale Paolo VI a Brescia The conference will be held at Centro Paolo VI in Brescia, a large and modern congress center located within a beautiful palace from the 1500, close to the city historical center.<br><br>
+						We chose this venue because of its position, <strong>easy to reach</strong> both by train and by car, but primarily for the size of its meeting rooms, with the aim to accommodate as many attendees as possible.<br><br>
+						The main room can seat up to 190 people, there are also other spaces which suits well for chatting, discussions and feedbacks. The beautiful cloister is going to host (weather permitting) lunch and coffee breaks.<br><br>
+						<u>The address is Via Calini 30 - Brescia.</u>
+					</p>
+					<div class="event-title title">
+						Directions
+					</div>	
+					<iframe id="directions" src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d2794.808222020641!2d10.219464448710106!3d45.53406465979114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!1i0!3e3!4m3!3m2!1d45.5330618!2d10.2123262!4m5!1s0x478176113971fad3%3A0x7a51c32e355c04f6!2sVia+Gezio+Calini%2C+30%2C+25121+Brescia+BS%2C+Italy!3m2!1d45.5348142!2d10.228482099999999!5e0!3m2!1sen!2s!4v1388741415944" width="640" height="450" frameborder="0" style="border:0"></iframe>
+				</div>				
 			</article>
 
 			<?php $curpage = array_shift($pages); ?>

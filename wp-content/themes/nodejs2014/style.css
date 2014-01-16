@@ -4,7 +4,7 @@ Description: NodeJSConf 2014 theme
 Author: NodeJSConf Team
 Version: 1.0
 */
-/* line 17, ../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,45 +26,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -441,20 +441,43 @@ article {
 }
 
 /* line 324, scss/style.scss */
+#venue-pictures {
+  width: 280px;
+  float: right;
+}
+/* line 329, scss/style.scss */
+#venue-pictures img {
+  border: 5px solid #fff;
+  margin-bottom: 10px;
+}
+
+/* line 336, scss/style.scss */
+#venue {
+  width: 350px;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* line 343, scss/style.scss */
+#directions {
+  border: 5px solid #fff !important;
+}
+
+/* line 348, scss/style.scss */
 #ws-title {
   color: #5480a8;
 }
 
-/* line 329, scss/style.scss */
+/* line 353, scss/style.scss */
 #ws-logo {
   margin: 15px 0px;
 }
 
-/* line 334, scss/style.scss */
+/* line 358, scss/style.scss */
 #ws-info {
   margin-top: 20px;
 }
-/* line 338, scss/style.scss */
+/* line 362, scss/style.scss */
 #ws-info h3 {
   font-family: "Yanone Kaffeesatz";
   font-weight: bold;
@@ -463,69 +486,69 @@ article {
   text-transform: uppercase;
 }
 
-/* line 348, scss/style.scss */
+/* line 372, scss/style.scss */
 #ws-map {
   border: 5px solid #fff;
   float: left;
   margin-right: 25px;
 }
 
-/* line 355, scss/style.scss */
+/* line 379, scss/style.scss */
 #ws-speakers {
   clear: left;
   margin-bottom: 50px;
 }
-/* line 360, scss/style.scss */
+/* line 384, scss/style.scss */
 #ws-speakers li {
   padding-top: 25px;
 }
-/* line 365, scss/style.scss */
+/* line 389, scss/style.scss */
 #ws-speakers img {
   float: left;
   clear: left;
   margin-top: 10px;
 }
-/* line 372, scss/style.scss */
+/* line 396, scss/style.scss */
 #ws-speakers h3 {
   font-family: "Yanone Kaffeesatz";
   font-weight: bold;
   font-size: 26px;
   color: #5480a8;
 }
-/* line 379, scss/style.scss */
+/* line 403, scss/style.scss */
 #ws-speakers h3 a {
   color: #a4a4a4;
 }
-/* line 384, scss/style.scss */
+/* line 408, scss/style.scss */
 #ws-speakers h4 {
   font-weight: bold;
   font-size: 18px;
   color: #39302b;
   margin-top: 10px;
 }
-/* line 392, scss/style.scss */
+/* line 416, scss/style.scss */
 #ws-speakers p {
   font-size: 15px;
   margin-bottom: 0px;
 }
 
-/* line 399, scss/style.scss */
+/* line 423, scss/style.scss */
 .ws-speaker-bio {
   margin-left: 140px;
 }
 
-/* line 403, scss/style.scss */
+/* line 427, scss/style.scss */
 #slides img {
   margin: 5px;
   box-sizing: border-box;
 }
 
-/* line 409, scss/style.scss */
+/* line 433, scss/style.scss */
 #slides-pagination {
   text-align: center;
   padding: 30px 0px;
 }
-/* line 413, scss/style.scss */
+/* line 437, scss/style.scss */
 #slides-pagination a {
   display: inline-block;
   text-indent: -999px;
@@ -536,17 +559,17 @@ article {
   height: 10px;
   margin: 0 3px;
 }
-/* line 423, scss/style.scss */
+/* line 447, scss/style.scss */
 #slides-pagination a.selected {
   background-color: #c4c72e;
 }
 
-/* line 431, scss/style.scss */
+/* line 455, scss/style.scss */
 #footer-container {
   background-color: #39302b;
 }
 
-/* line 436, scss/style.scss */
+/* line 460, scss/style.scss */
 #footer {
   width: 830px;
   margin: 0px auto;
@@ -555,35 +578,35 @@ article {
   padding: 50px 0px 140px 0px;
 }
 
-/* line 445, scss/style.scss */
+/* line 469, scss/style.scss */
 #call-for-paper {
   float: right;
   width: 510px;
 }
 
-/* line 451, scss/style.scss */
+/* line 475, scss/style.scss */
 #footer a {
   color: #c4c72e;
   font-size: 20px;
   text-transform: uppercase;
 }
 
-/* line 458, scss/style.scss */
+/* line 482, scss/style.scss */
 #social {
   margin-top: 30px;
 }
 
-/* line 463, scss/style.scss */
+/* line 487, scss/style.scss */
 #social li {
   display: inline-block;
   margin-right: 15px;
 }
 
-/* line 468, scss/style.scss */
+/* line 492, scss/style.scss */
 #supportersdiv {
   margin-bottom: 100px;
 }
-/* line 470, scss/style.scss */
+/* line 494, scss/style.scss */
 #supportersdiv h1, #supportersdiv h2 {
   text-align: center;
   text-transform: uppercase;
@@ -594,31 +617,31 @@ article {
   font-size: 40px;
   color: #c4c72e;
 }
-/* line 480, scss/style.scss */
+/* line 504, scss/style.scss */
 #supportersdiv h2 {
   color: #9a9997;
 }
-/* line 483, scss/style.scss */
+/* line 507, scss/style.scss */
 #supportersdiv .supporters {
   text-align: center;
   max-width: 960px;
   border-bottom: 1px solid #dad9d7;
   padding-bottom: 20px;
 }
-/* line 489, scss/style.scss */
+/* line 513, scss/style.scss */
 #supportersdiv .supporters p, #supportersdiv .supporters img, #supportersdiv .supporters a {
   display: inline-block;
 }
-/* line 490, scss/style.scss */
+/* line 514, scss/style.scss */
 #supportersdiv .supporters img {
   padding: 0 20px;
 }
-/* line 491, scss/style.scss */
+/* line 515, scss/style.scss */
 #supportersdiv .supporters br {
   display: none;
 }
 
-/* line 495, scss/style.scss */
+/* line 519, scss/style.scss */
 .eventbrite {
   width: 530px !important;
   position: absolute;

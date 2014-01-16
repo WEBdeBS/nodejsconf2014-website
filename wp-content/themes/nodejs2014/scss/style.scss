@@ -320,6 +320,30 @@ article
 	}
 }
 
+#venue-pictures
+{
+	width: 280px;
+	float: right;
+
+	img
+	{
+		border: 5px solid #fff;
+		margin-bottom: 10px;
+	}
+}
+
+#venue
+{
+	width: 350px;
+	font-size: 14px;
+	margin-bottom: 25px;
+}
+
+#directions
+{
+	border: 5px solid #fff !important;
+}
+
 #ws-title
 {
 	color: $ws;
