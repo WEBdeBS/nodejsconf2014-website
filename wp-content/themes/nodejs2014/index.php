@@ -28,6 +28,27 @@
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
 		<?php wp_head(); ?>
+
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-46921107-1']);
+		  _gaq.push(['_setDomainName', 'nodejsconf.it']);
+		  _gaq.push(['_setAllowLinker', true]);
+		  _gaq.push(['_trackPageview']);
+		  _gaq.push(function() {
+		    var pageTracker = _gat._getTrackerByName();
+		    var iframe = document.getElementById('myIFrame');
+		    iframe.src = pageTracker._getLinkerUrl('http://www.eventbrite.it/tickets-external?eid=9509179211&ref=etckt&v=2');
+		  });
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>		
 	</head>
 	<body>
 
@@ -39,7 +60,8 @@
 			</h1>
 
 			<div class="eventbrite">
-				<a href="https://www.eventbrite.it/e/biglietti-nodejs-conf-it-2014-9509179211?ref=ebtnebtckt" target="_blank"><img src="http://www.eventbrite.com/custombutton?eid=9509179211" alt="Eventbrite - NodeJS Conf It 2014" /></a>
+				<a href="https://www.eventbrite.it/e/biglietti-nodejs-conf-it-2014-9509179211?ref=ebtnebtckt" target="_blank" onclick="_gaq.push(['_trackEvent', 'Click Out', 'Eventbrite']);_gaq.push(['_link', 'https://www.eventbrite.it/e/biglietti-nodejs-conf-it-2014-9509179211?ref=ebtnebtckt']); return false;
+"><img src="http://www.eventbrite.com/custombutton?eid=9509179211" alt="Eventbrite - NodeJS Conf It 2014"></a>
 			</div>
 
 			<!-- mostri -->
@@ -248,7 +270,6 @@
 							<div class="ws-speaker-bio">
 								<h3>
 									17:00 - 17:40: Matteo Brunati
-									</a>
 								</h3>
 								<h4>
 									NodeJS Enterprise Apps - A Project Manager PoV
@@ -268,15 +289,35 @@ Developement tools: IDE, workflow tools, VCS, Continuous Integration, programmin
 							</div>
 						</li>
 						<li>
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/alvaro_videla.png" alt="">
 							<div class="ws-speaker-bio">
-								<h3>17:40 - 18:00: Thanks and Goodbye!</h3>
+								<h3>
+									17:50 - 18:30: Alvaro Videla - 
+									<a href="https://twitter.com/old_sound">
+										@old_sound
+									</a>	
+								</h3>
+								<h4>
+									Building a Distributed Data Ingestion System with RabbitMQ
+								</h4>
+								<p>
+Your company has servers distributed around the world and you need to process data in a centralised location. The data is produced by applications using different technology stacks and comes from various sources, from web servers to sensors. How could you solve this problem? Enter RabbitMQ.
+In this talk we are going to show how to build a system that can ingest data produced at separate geo located areas (think AWS and it's many regions) and replicate it to a central cluster where it can be further processed and analysed.
+We will present an example of how to build a system like this one by using RabbitMQ Federation to replicate data across AWS Regions and RabbitMQ support for many protocols to produce/consume data.
+To help with scalability we are going to show an interesting way to implement sharded queues with RabbitMQ by using the Consistent Hash Exchange.
+If you want to learn what else has RabbitMQ to offer beyond simple messaging and queueing, then this is the talk for you.								</p>
+							</div>
+						</li>						
+						<li>
+							<div class="ws-speaker-bio">
+								<h3>18:30 - 18:45: Thanks and Goodbye!</h3>
 							</div>
 						</li>						
 					</ul>
 					<div class="event-title title">
 						Buy your tickets!
 					</div>
-					<div style="width:100%; text-align:left;" ><iframe  src="http://www.eventbrite.it/tickets-external?eid=9509179211&ref=etckt&v=2" frameborder="0" height="261" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it/r/etckt">Registrazione dell'evento online</a><span style="color:#ddd;"> per </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://nodejsconfit2014.eventbrite.it/?ref=etckt">NodeJS Conf It 2014</a> <span style="color:#ddd;">con tecnologia</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it?ref=etckt">Eventbrite</a></div></div>
+					<div style="width:100%; text-align:left;" ><iframe id="myIFrame" src="http://www.eventbrite.it/tickets-external?eid=9509179211&ref=etckt&v=2" frameborder="0" height="261" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it/r/etckt">Registrazione dell'evento online</a><span style="color:#ddd;"> per </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://nodejsconfit2014.eventbrite.it/?ref=etckt">NodeJS Conf It 2014</a> <span style="color:#ddd;">con tecnologia</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it?ref=etckt">Eventbrite</a></div></div>
 					<div class="event-title title">
 						Hotel agreements
 					</div>
@@ -329,7 +370,7 @@ Developement tools: IDE, workflow tools, VCS, Continuous Integration, programmin
 									Contacts
 								</h4>
 								<p>
-									you can book your room <a href="http://www.nh-hotels.com/nh/en/hotels/italy/brescia/nh-brescia.html?nhagentid=11009&nhsubagentid=110095220109&utm_source=google&utm_medium=maps&utm_campaign=googleplaces">here</a>
+									you can book your room by calling +3903044221 asking to get the agreed special price
 								</p>
 							</div>
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1397.4169030051944!2d10.213322190063904!3d45.53354985324733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x676a661f9f3c492d!2sNh+Brescia+Hotel!5e0!3m2!1sen!2s!4v1388743083684" width="400" height="300" frameborder="0" style="border:0"></iframe>
