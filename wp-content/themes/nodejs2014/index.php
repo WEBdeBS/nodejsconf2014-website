@@ -393,6 +393,70 @@ If you want to learn what else has RabbitMQ to offer beyond simple messaging and
 						Directions
 					</div>	
 					<iframe id="directions" src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d2794.808222020641!2d10.219464448710106!3d45.53406465979114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!1i0!3e3!4m3!3m2!1d45.5330618!2d10.2123262!4m5!1s0x478176113971fad3%3A0x7a51c32e355c04f6!2sVia+Gezio+Calini%2C+30%2C+25121+Brescia+BS%2C+Italy!3m2!1d45.5348142!2d10.228482099999999!5e0!3m2!1sen!2s!4v1388741415944" width="640" height="450" frameborder="0" style="border:0"></iframe>
+					<div id="links">
+						<span>
+							Links&amp;Info
+						</span>
+						<p>
+							<a href="http://www.centropastoralepaolovi.it/dovesiamo.htm">
+								Directions given by the venue
+							</a>
+							<span>
+								Airports
+							</span>
+							<a href="http://www.aeroportoverona.it/en/passeggeri_t5/">
+								Aeroporto Valerio Catullo di Verona
+							</a>
+							<a href="http://www.sacbo.it/Airpor/portalProcess.jsp?languageID=2">
+								Aeroporto Il Caravaggio di Bergamo
+							</a>
+							<span>
+								Trains
+							</span>
+							<a href="http://www.trenitalia.com/cms/v/index.jsp?vgnextoid=4ddd1a035296f310VgnVCM1000005817f90aRCRD">
+								Trenitalia
+							</a>
+							<span>
+								Bus &amp; Metro
+							</span>
+							<a href="http://www.bresciamobilita.it/">
+								Brescia Mobilit&agrave;
+							</a>
+							<span>
+								Taxi
+							</span>
+							<a href="http://www.radiotaxibrixia.it/">
+								Brescia Radio Taxi
+							</a>
+							<span>
+								Tripadvisor
+							</span>
+							<a href="http://www.tripadvisor.com/Tourism-g194702-Brescia_Province_of_Brescia_Lombardy-Vacations.html">
+								Brescia on Tripadvisor
+							</a>
+						</p>
+					</div>
+					<div id="how-to">
+						<span>
+							By car
+						</span>
+						<p>
+							If you come by car take the exit "Brescia Centro", and then: Google Maps.
+						</p>
+						<span>
+							By train
+						</span>
+						<p>
+							If you come by train, right outside the Brescia Train Station you'll find the Bus Stop: take line 12 ("Sanpolino" direction) and get off at Corso Magenta. Following map shows directions from station (and our hotels) to the conference venue.<br>
+							You can also take a taxi, it will cost you more or less 10€, or take a walk, it will take you 20 minutes.
+						</p>
+						<span>
+							By plane
+						</span>
+						<p>
+							If you come by plane, the nearest airports are Milano/Bergamo Orio al Serio and Verona airport
+						</p>
+					</div>
 				</div>				
 			</article>
 

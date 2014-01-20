@@ -342,6 +342,7 @@ article
 #directions
 {
 	border: 5px solid #fff !important;
+	margin-bottom: 40px;
 }
 
 #ws-title
@@ -523,4 +524,58 @@ article
 	left: 50%;
 	margin-left: -250px;
 	text-align: center;
+}
+
+#links
+{
+	float: right;
+	background-color: #ccc;
+	width: 270px;
+	padding: 20px 0px;
+	text-align: center;
+
+	> span
+	{
+		font-family: $font;
+		font-weight: bold;
+		font-size: 28px;
+		text-transform: uppercase;
+	}
+
+	p
+	{
+		span
+		{
+			display: block;
+			text-transform: uppercase;
+			margin-top: 5px;
+			font-size: 14px;
+		}
+
+		a
+		{
+			display: block;
+			font-size: 13px;
+		}
+	}
+}
+
+#how-to
+{
+	width: 350px;
+
+	span
+	{
+		font-family: $font;
+		font-weight: bold;
+		font-size: 28px;
+		color: $lightgreen;
+		text-transform: uppercase;
+	}
+
+	p
+	{
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
 }
